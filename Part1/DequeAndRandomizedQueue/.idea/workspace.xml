@@ -5,7 +5,23 @@
     <bookmark url="file://$PROJECT_DIR$/src/RandomizedQueueTests.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d76600-ef77-4990-a67b-4e8e91470483" name="Default Changelist" comment="" />
+    <list default="true" id="29d76600-ef77-4990-a67b-4e8e91470483" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/algs4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Part2/WordNet/.idea/libraries/stdlib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../8Puzzle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DequeAndRandomizedQueue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DequeAndRandomizedQueue.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/.idea/libraries/algs4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/.idea/libraries/algs4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/.idea/libraries/junit_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/.idea/libraries/junit_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/WordNet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/WordNet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/data/hypernyms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/data/hypernyms.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/data/synsets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/data/synsets.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/src/WordNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/src/WordNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part2/WordNet/src/WordNetShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part2/WordNet/src/WordNetShould.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +78,17 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-2035876703">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="DequeAndRandomizedQueue" />
@@ -71,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DequeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="355">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Deque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2366">
+            <state relative-caret-position="2002">
               <caret line="109" column="39" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="39" />
             </state>
           </provider>
@@ -92,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RandomizedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="220">
               <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
             </state>
           </provider>
@@ -134,6 +161,9 @@
       <replace>check</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -150,10 +180,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="-7" />
-    <option name="width" value="1937" />
-    <option name="height" value="1064" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -172,6 +202,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -205,14 +236,14 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538829933646" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540575487726" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../junit-4.10.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -387,7 +418,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -395,7 +426,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.50252104" side_tool="true" weight="0.093879975" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.497479" weight="0.19924812" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.497479" visible="true" weight="0.20402685" />
       <window_info id="Structure" order="6" sideWeight="0.50252104" side_tool="true" weight="0.093879975" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32919955" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32961586" />
@@ -463,20 +494,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../stdlib.jar!/StdRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="435" column="23" selection-start-line="435" selection-start-column="23" selection-end-line="435" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class" />
+    <entry file="jar://$PROJECT_DIR$/../stdlib.jar!/StdRandom.java" />
     <entry file="jar://$USER_HOME$/.ideaLibSources/junit-4.10-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -517,13 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../stdlib.jar!/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12861">
-          <caret line="155" column="11" selection-start-line="155" selection-start-column="11" selection-end-line="155" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../stdlib.jar!/In.java" />
     <entry file="file://$PROJECT_DIR$/../Percolation/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -531,13 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../algs4.jar!/edu/princeton/cs/algs4/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1408">
-          <caret line="157" column="11" selection-start-line="157" selection-start-column="11" selection-end-line="157" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../algs4.jar!/edu/princeton/cs/algs4/In.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -552,20 +559,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../algs4.jar!/edu/princeton/cs/algs4/StdIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9029">
-          <caret line="212" column="19" selection-start-line="212" selection-start-column="19" selection-end-line="212" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../algs4.jar!/edu/princeton/cs/algs4/StdRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../algs4.jar!/edu/princeton/cs/algs4/StdIn.java" />
+    <entry file="jar://$PROJECT_DIR$/../algs4.jar!/edu/princeton/cs/algs4/StdRandom.java" />
     <entry file="file://$PROJECT_DIR$/src/RandomizedQueueTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -582,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DequeTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="355">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,14 +587,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Deque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2366">
+        <state relative-caret-position="2002">
           <caret line="109" column="39" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RandomizedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="220">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
@@ -661,6 +656,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -679,6 +675,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>algs4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
