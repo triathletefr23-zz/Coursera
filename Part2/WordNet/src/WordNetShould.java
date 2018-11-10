@@ -45,6 +45,21 @@ public class WordNetShould {
             new int[] { 9, 3 }
     };
 
+    private final int example4_verticesCount = 13;
+    private final int[][] example4 = {
+            new int[] { 7, 3 },
+            new int[] { 8, 3 },
+            new int[] { 3, 1 },
+            new int[] { 4, 1 },
+            new int[] { 5, 1 },
+            new int[] { 9, 5 },
+            new int[] { 10, 5 },
+            new int[] { 11, 10 },
+            new int[] { 12, 10 },
+            new int[] { 1, 0 },
+            new int[] { 2, 0 }
+    };
+
     public WordNetShould() {
         wordNet = new WordNet();
     }
@@ -114,6 +129,24 @@ public class WordNetShould {
         wordNet = new WordNet(example3, example3_verticesCount);
         var nounA = "7";
         var nounB = "9";
+        var sap = wordNet.sap(nounA, nounB);
+        Assert.assertEquals("1", sap);
+    }
+
+    @Test
+    public void ReturnCorrectDistanceFromExample4() {
+        wordNet = new WordNet(example4, example4_verticesCount);
+        var nounA = "3";
+        var nounB = "11";
+        var distance = wordNet.distance(nounA, nounB);
+        Assert.assertEquals(4, distance);
+    }
+
+    @Test
+    public void ReturnCorrectSapFromExample4() {
+        wordNet = new WordNet(example4, example4_verticesCount);
+        var nounA = "3";
+        var nounB = "11";
         var sap = wordNet.sap(nounA, nounB);
         Assert.assertEquals("1", sap);
     }
