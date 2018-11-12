@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88ce4c7b-65c5-45d9-9d65-0c22971e5f9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SAP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SapShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Part1/PatternRecognition/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Outcast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OutcastShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part1/PatternRecognition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/PatternRecognition/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordNetShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordNetShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SAP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SAP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordNet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,6 +17,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/WordNet$WordNetShould_ReturnCorrectDistanceFromExample1.ic" NAME="WordNetShould.ReturnCorrectDistanceFromExample1 Coverage Results" MODIFIED="1542061675340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1636843061">
@@ -48,58 +54,88 @@
     <session id="-1619914646">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SAP" value="2" />
-          <entry key="class" value="2" />
-          <entry key="java" value="21" />
-          <entry key="txt" value="7" />
+          <entry key="class" value="5" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="34" />
+          <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="23" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="CLASS" value="5" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="36" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="SAP" value="769" />
           <entry key="dummy" value="12" />
-          <entry key="java" value="5895" />
-          <entry key="txt" value="1" />
+          <entry key="java" value="8683" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6664" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="JAVA" value="9452" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40857503">
+    <splitter split-orientation="horizontal" split-proportion="0.445629">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/SapShould.java">
+            <entry file="file://$PROJECT_DIR$/src/WordNetShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="486">
-                  <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+                <state relative-caret-position="222">
+                  <caret line="86" selection-start-line="86" selection-end-line="86" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#912#913#0" expanded="true" />
-                    <element signature="e#947#948#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/SapShould.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="521">
+                  <caret line="95" selection-start-line="95" selection-end-line="95" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#937#938#0" expanded="true" />
+                    <element signature="e#972#973#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/SAP.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="492">
+                  <caret line="55" column="20" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#858#859#0" expanded="true" />
+                    <element signature="e#905#906#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -110,42 +146,23 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/WordNet.java">
+            <entry file="file://$PROJECT_DIR$/src/Outcast.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/digraph1.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="2" selection-start-column="2" selection-end-column="2" />
+                <state relative-caret-position="504">
+                  <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/SAP.java">
+            <entry file="file://$PROJECT_DIR$/src/WordNet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="602">
-                  <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/WordNetShould.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="584">
+                  <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1943#1944#0" expanded="true" />
+                    <element signature="e#1990#1991#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -167,9 +184,16 @@
       <find>42338</find>
       <find>dist</find>
       <find>distanceance</find>
+      <find>keys</find>
+      <find>sap</find>
+      <find>lastW</find>
     </findStrings>
     <replaceStrings>
       <replace>distance</replace>
+      <replace>nodes</replace>
+      <replace>currSap</replace>
+      <replace>previousA</replace>
+      <replace>previousB</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -179,20 +203,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/data/synsets.txt" />
-        <option value="$PROJECT_DIR$/src/WordNet.java" />
         <option value="$PROJECT_DIR$/data/digraph1.txt" />
         <option value="$PROJECT_DIR$/src/WordNetShould.java" />
         <option value="$PROJECT_DIR$/src/SAP" />
+        <option value="$PROJECT_DIR$/src/OutcastShould.java" />
+        <option value="$PROJECT_DIR$/data/outcast5.txt" />
+        <option value="$PROJECT_DIR$/data/outcast8.txt" />
+        <option value="$PROJECT_DIR$/data/outcast11.txt" />
         <option value="$PROJECT_DIR$/src/SapShould.java" />
+        <option value="$PROJECT_DIR$/src/Outcast.java" />
         <option value="$PROJECT_DIR$/src/SAP.java" />
+        <option value="$PROJECT_DIR$/src/WordNet.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="265" />
-    <option name="y" value="-1110" />
-    <option name="width" value="1536" />
-    <option name="height" value="864" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -246,7 +274,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,18 +301,19 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541892047843" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Part1/8Puzzle" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542062760341" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Part1/PatternRecognition" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20877193" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -299,31 +327,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SapShould.ReturnLengthAndAncestorForPair4InExample1">
-    <configuration name="SapShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Outcast">
+    <configuration name="Outcast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Outcast" />
       <module name="WordNet" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SapShould" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;data\synsets.txt&quot; &quot;data\hypernyms.txt&quot; &quot;data\outcast5.txt&quot; " />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SapShould.ReturnLengthAndAncestorForExample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SAP" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SAP" />
       <module name="WordNet" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SapShould" />
-      <option name="METHOD_NAME" value="ReturnLengthAndAncestorForExample1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;file:///$PROJECT_DIR$/data/digraph1.txt&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SapShould.ReturnLengthAndAncestorForPair4InExample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in WordNet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WordNet" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SapShould" />
-      <option name="METHOD_NAME" value="ReturnLengthAndAncestorForPair4InExample1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,34 +356,47 @@
       <module name="WordNet" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WordNetShould" />
+      <option name="METHOD_NAME" value="ReturnCorrectDistanceFromExample1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordNetShould.ReturnCorrectDistanceFromExample2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordNetShould.ReturnCorrectDistanceFromExample1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WordNet" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WordNetShould" />
-      <option name="METHOD_NAME" value="ReturnCorrectDistanceFromExample2" />
+      <option name="METHOD_NAME" value="ReturnCorrectDistanceFromExample1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="[engine:junit-vintage]/[runner:SapShould]" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WordNet" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-vintage]/[runner:SapShould]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.SAP" />
+      <item itemvalue="Application.Outcast" />
+      <item itemvalue="JUnit.All in WordNet" />
+      <item itemvalue="JUnit.[engine:junit-vintage]/[runner:SapShould]" />
+      <item itemvalue="JUnit.WordNetShould.ReturnCorrectDistanceFromExample1" />
       <item itemvalue="JUnit.WordNetShould" />
-      <item itemvalue="JUnit.WordNetShould.ReturnCorrectDistanceFromExample2" />
-      <item itemvalue="JUnit.SapShould" />
-      <item itemvalue="JUnit.SapShould.ReturnLengthAndAncestorForExample1" />
-      <item itemvalue="JUnit.SapShould.ReturnLengthAndAncestorForPair4InExample1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SapShould" />
-        <item itemvalue="JUnit.SapShould.ReturnLengthAndAncestorForPair4InExample1" />
-        <item itemvalue="JUnit.SapShould.ReturnLengthAndAncestorForExample1" />
+        <item itemvalue="Application.Outcast" />
         <item itemvalue="JUnit.WordNetShould" />
-        <item itemvalue="JUnit.WordNetShould.ReturnCorrectDistanceFromExample2" />
+        <item itemvalue="JUnit.WordNetShould.ReturnCorrectDistanceFromExample1" />
+        <item itemvalue="JUnit.All in WordNet" />
+        <item itemvalue="JUnit.[engine:junit-vintage]/[runner:SapShould]" />
       </list>
     </recent_temporary>
   </component>
@@ -377,59 +414,69 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordNetShould - 2018.11.10 at 23h 06m 39s.xml">
+    <history-entry file="All_in_WordNet - 2018.11.12 at 23h 07m 18s.xml">
+      <configuration name="All in WordNet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_WordNet - 2018.11.12 at 23h 08m 25s.xml">
+      <configuration name="All in WordNet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="[engine_junit-vintage]_[runner_SapShould] - 2018.11.12 at 23h 09m 31s.xml">
+      <configuration name="[engine:junit-vintage]/[runner:SapShould]" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="[engine_junit-vintage]_[runner_SapShould] - 2018.11.12 at 23h 10m 13s.xml">
+      <configuration name="[engine:junit-vintage]/[runner:SapShould]" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="[engine_junit-vintage]_[runner_SapShould] - 2018.11.12 at 23h 12m 56s.xml">
+      <configuration name="[engine:junit-vintage]/[runner:SapShould]" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_WordNet - 2018.11.12 at 23h 27m 12s.xml">
+      <configuration name="All in WordNet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordNetShould_ReturnCorrectDistanceFromExample1 - 2018.11.12 at 23h 27m 33s.xml">
+      <configuration name="WordNetShould.ReturnCorrectDistanceFromExample1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordNetShould_ReturnCorrectDistanceFromExample1 - 2018.11.12 at 23h 28m 12s.xml">
+      <configuration name="WordNetShould.ReturnCorrectDistanceFromExample1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordNetShould_ReturnCorrectDistanceFromExample1 - 2018.11.12 at 23h 28m 27s.xml">
+      <configuration name="WordNetShould.ReturnCorrectDistanceFromExample1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordNetShould - 2018.11.12 at 23h 29m 04s.xml">
       <configuration name="WordNetShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordNetShould - 2018.11.10 at 23h 15m 14s.xml">
-      <configuration name="WordNetShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould - 2018.11.11 at 00h 10m 22s.xml">
-      <configuration name="SapShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould - 2018.11.11 at 00h 12m 56s.xml">
-      <configuration name="SapShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould_ReturnLengthAndAncestorForExample1 - 2018.11.11 at 00h 13m 23s.xml">
-      <configuration name="SapShould.ReturnLengthAndAncestorForExample1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould - 2018.11.11 at 00h 18m 01s.xml">
-      <configuration name="SapShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould_ReturnLengthAndAncestorForExample1 - 2018.11.11 at 00h 18m 08s.xml">
-      <configuration name="SapShould.ReturnLengthAndAncestorForExample1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould - 2018.11.11 at 00h 18m 16s.xml">
-      <configuration name="SapShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould - 2018.11.11 at 00h 19m 49s.xml">
-      <configuration name="SapShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SapShould_ReturnLengthAndAncestorForPair4InExample1 - 2018.11.11 at 00h 20m 04s.xml">
-      <configuration name="SapShould.ReturnLengthAndAncestorForPair4InExample1" configurationId="JUnit" />
-    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15458423" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15618336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Run" order="7" visible="true" weight="0.1641791" />
+      <window_info id="Run" order="7" weight="0.16204691" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.2741117" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32994923" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49946696" weight="0.32994923" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32994923" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -440,24 +487,24 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15503356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Run" order="7" visible="true" weight="0.16442953" />
+      <window_info id="Run" order="7" weight="0.19189766" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.2747396" />
+      <window_info anchor="bottom" id="Debug" order="2" visible="true" weight="0.2741117" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32994923" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49946696" weight="0.32994923" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32994923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -475,6 +522,24 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WordNet.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Outcast.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/../../stdlib.jar!/In.java">
@@ -519,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/DepthFirstPaths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-301">
@@ -561,33 +619,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SAP">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="16" lean-forward="true" selection-end-line="107" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordNetShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SAP" />
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/BreadthFirstDirectedPaths.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
@@ -595,10 +627,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../Part1/8Puzzle/8Puzzle.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/outcast5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/outcast8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/outcast11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="79" selection-start-column="79" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OutcastShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Digraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48">
-          <caret line="139" column="15" selection-start-line="139" selection-start-column="15" selection-end-line="139" selection-end-column="15" />
+        <state relative-caret-position="21">
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
           <folding>
             <element signature="e#4969#4970#0" expanded="true" />
             <element signature="e#4993#4994#0" expanded="true" />
@@ -606,22 +684,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SapShould.java">
+    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SAP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+        <state relative-caret-position="492">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SapShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordNetShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Outcast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,10 +4,9 @@ import edu.princeton.cs.algs4.In;
 
 public class SAP {
     private Digraph digraph;
-    private int distance;
-    private int sap;
-    private int distanceMany;
-    private int sapMany;
+
+    private int[] lastValues;
+    private int[] resultValues;
 
     // constructor takes a digraph (not necessarily a DAG)
     public SAP(Digraph G) {
@@ -24,18 +23,24 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
-        runBfs(v, w);
-        return distance;
+        int[] result = runBfs(v, w);
+        return result[0];
     }
 
     private boolean isValid(int v) {
         return v > 0 && v < digraph.V();
     }
 
-    private void runBfs(int vertexA, int vertexB) {
+    private int[] runBfs(int vertexA, int vertexB) {
+        if (lastValues != null && lastValues[0] == vertexA && lastValues[1] == vertexB) {
+            return resultValues;
+        }
+
+        lastValues = new int[]{ vertexA, vertexB };
+
         Digraph reGraph = digraph.reverse();
-        distance = Integer.MAX_VALUE;
-        sap = -1;
+        int distance = Integer.MAX_VALUE;
+        int sap = -1;
         for (int vertex = 0; vertex < digraph.V(); vertex++) {
             BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(reGraph, vertex);
             if (bfs.hasPathTo(vertexA) && bfs.hasPathTo(vertexB)) {
@@ -48,20 +53,25 @@ public class SAP {
         }
 
         if (sap == -1) distance = -1;
+        resultValues = new int[]{ distance, sap };
+        return resultValues;
     }
 
-    private void findMinDistAndSap(Iterable<Integer> first, Iterable<Integer> second) {
-        distanceMany = Integer.MAX_VALUE;
-        sapMany = -1;
+    private int[] findMinDistAndSap(Iterable<Integer> first, Iterable<Integer> second) {
+        int distanceMany = Integer.MAX_VALUE;
+        int sapMany = 0;
         for (int vertexA: first) {
             for (int vertexB: second) {
-                runBfs(vertexA, vertexB);
+                int[] values = runBfs(vertexA, vertexB);
+                int distance = values[0];
+                int sap = values[1];
                 if (distance < distanceMany) {
                     distanceMany = distance;
                     sapMany = sap;
                 }
             }
         }
+        return new int[]{ distanceMany, sapMany };
     }
 
     // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
@@ -70,8 +80,8 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
-        runBfs(v, w);
-        return sap;
+        int[] result = runBfs(v, w);
+        return result[1];
     }
 
     // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
@@ -80,8 +90,8 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
-        findMinDistAndSap(v, w);
-        return distanceMany;
+        int[] result = findMinDistAndSap(v, w);
+        return result[0];
     }
 
     // a common ancestor that participates in shortest ancestral path; -1 if no such path
@@ -90,8 +100,8 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
-        findMinDistAndSap(v, w);
-        return sapMany;
+        int[] result = findMinDistAndSap(v, w);
+        return result[1];
     }
 
     // do unit testing of this class
