@@ -3,36 +3,39 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Stack;
 
 import java.util.HashMap;
+import java.util.Arrays;
+import java.util.Map;
 
 public class WordNet {
 
-    private Digraph digraph;
-    private HashMap<Integer, String> keys;
-    private SAP sap;
+    private final HashMap<Integer, Iterable<String>> keys;
+    private final SAP sap;
     private String previousA;
     private String previousB;
     private int[] previousResult;
 
-    public WordNet() {
-        digraph = new Digraph(0);
-        keys = new HashMap<>();
-        sap = new SAP(digraph);
-    }
+//    public WordNet() {
+//        digraph = new Digraph(0);
+//        keys = new HashMap<>();
+//        sap = new SAP(digraph);
+//    }
 
-    public WordNet(int[][] edges, int count) {
-        digraph = new Digraph(count);
-        keys = new HashMap<>();
-
-        for (int[] edge: edges) {
-            digraph.addEdge(edge[0], edge[1]);
-        }
-
-        sap = new SAP(digraph);
-
-        for (int i = 0; i < count; i++) {
-            keys.put(i, String.valueOf(i));
-        }
-    }
+//    public WordNet(int[][] edges, int count) {
+//        digraph = new Digraph(count);
+//        keys = new HashMap<>();
+//
+//        for (int[] edge: edges) {
+//            digraph.addEdge(edge[0], edge[1]);
+//        }
+//
+//        sap = new SAP(digraph);
+//
+//        for (int i = 0; i < count; i++) {
+//            List<String> list = new ArrayList<>();
+//            list.add(String.valueOf(i));
+//            keys.put(i, list);
+//        }
+//    }
 
     // constructor takes the name of the two input files
     public WordNet(String synsets, String hypernyms) {
@@ -48,18 +51,11 @@ public class WordNet {
         while (fileSynsets.hasNextLine()) {
             String[] line = parseLine(fileSynsets);
             int v = Integer.parseInt(line[0]);
-            if (line[1].contains(" ")) {
-                String[] words = line[1].split(" ");
-                for (String word: words) {
-                    keys.put(v, word);
-                }
-            }
-            else {
-                keys.put(v, line[1]);
-            }
+            String[] words = line[1].split("\\s+");
+            keys.put(v, Arrays.asList(words));
         }
 
-        digraph = new Digraph(keys.size());
+        Digraph digraph = new Digraph(keys.size());
 
         while (fileHypernyms.hasNextLine()) {
             String[] line = parseLine(fileHypernyms);
@@ -71,8 +67,6 @@ public class WordNet {
         }
 
         sap = new SAP(digraph);
-        // should throw an exception if
-        // the input to the constructor does not correspond to a rooted DAG
     }
 
     private String[] parseLine(In in) {
@@ -81,7 +75,11 @@ public class WordNet {
 
     // returns all WordNet nouns
     public Iterable<String> nouns() {
-        return keys.values();
+        Stack<String> words = new Stack<>();
+        for (Iterable<String> elem: keys.values()) {
+            elem.forEach(words::push);
+        }
+        return words;
     }
 
     // is the word a WordNet noun?
@@ -90,7 +88,15 @@ public class WordNet {
             throw new IllegalArgumentException();
         }
 
-        return keys.containsValue(word);
+        for (Iterable<String> elem: keys.values()) {
+            for (String elem1: elem) {
+                if (elem1.equals(word)) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     // distance between nounA and nounB (defined below)
@@ -124,13 +130,14 @@ public class WordNet {
     }
 
     private Iterable<Integer> findNumbersForNoun(String word) {
-        int count = 0;
         Stack<Integer> numbers = new Stack<>();
-        for (String noun: keys.values()) {
-            if (noun.equals(word)) {
-                numbers.push(count);
+        for (Map.Entry<Integer, Iterable<String>> nouns: keys.entrySet()) {
+            for (String el: nouns.getValue()) {
+                if (el.equals(word)) {
+                    numbers.push(nouns.getKey());
+                    break;
+                }
             }
-            count++;
         }
         return numbers;
     }
@@ -144,11 +151,11 @@ public class WordNet {
 
         int[] result = runBfs(nounA, nounB);
 
-        return keys.get(result[1]);
+        return keys.get(result[1]).iterator().next();
     }
 
     // do unit testing of this class
     public static void main(String[] args) {
-        WordNet wordNet = new WordNet(args[0], args[1]);
+//        WordNet wordNet = new WordNet(args[0], args[1]);
     }
 }

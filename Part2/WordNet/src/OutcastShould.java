@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class OutcastShould {
@@ -9,16 +10,35 @@ public class OutcastShould {
     private Outcast outcast;
 
     public OutcastShould() {
-        outcast = new Outcast(new WordNet());
+        WordNet wordnet = new WordNet("data\\synsets.txt", "data\\hypernyms.txt");
+        outcast = new Outcast(wordnet);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void ThrowAnExceptionIfWordnetIsNull() {
-        new Outcast(null);
+        outcast = new Outcast(null);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void ThrowAnExceptionIfArgumentInOutcastIsNull() {
         outcast.outcast(null);
+    }
+
+    @Test
+    public void ReturnTableForExample5() {
+        var res = outcast.outcast(example5);
+        Assert.assertEquals("table", res);
+    }
+
+    @Test
+    public void ReturnTableForExample8() {
+        var res = outcast.outcast(example8);
+        Assert.assertEquals("bed", res);
+    }
+
+    @Test
+    public void ReturnTableForExample11() {
+        var res = outcast.outcast(example11);
+        Assert.assertEquals("potato", res);
     }
 }

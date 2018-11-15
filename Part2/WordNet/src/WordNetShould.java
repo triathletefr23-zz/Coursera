@@ -61,7 +61,7 @@ public class WordNetShould {
     };
 
     public WordNetShould() {
-        wordNet = new WordNet();
+        wordNet = new WordNet("data\\synsets.txt", "data\\hypernyms.txt");
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -149,5 +149,37 @@ public class WordNetShould {
         var nounB = "11";
         var sap = wordNet.sap(nounA, nounB);
         Assert.assertEquals("1", sap);
+    }
+
+    @Test
+    public void ReturnCorrectSapForRemoteExamples1() {
+        var nounA = "white_marlin";
+        var nounB = "mileage";
+        var distance = wordNet.distance(nounA, nounB);
+        Assert.assertEquals(23, distance);
+    }
+
+    @Test
+    public void ReturnCorrectSapForRemoteExamples2() {
+        var nounA = "Black_Plague";
+        var nounB = "black_marlin";
+        var distance = wordNet.distance(nounA, nounB);
+        Assert.assertEquals(33, distance);
+    }
+
+    @Test
+    public void ReturnCorrectSapForRemoteExamples3() {
+        var nounA = "American_water_spaniel";
+        var nounB = "histology";
+        var distance = wordNet.distance(nounA, nounB);
+        Assert.assertEquals(27, distance);
+    }
+
+    @Test
+    public void ReturnCorrectSapForRemoteExamples4() {
+        var nounA = "Brown_Swiss";
+        var nounB = "barrel_roll";
+        var distance = wordNet.distance(nounA, nounB);
+        Assert.assertEquals(29, distance);
     }
 }
