@@ -1,69 +1,73 @@
 import edu.princeton.cs.algs4.Digraph;
+import edu.princeton.cs.algs4.DirectedCycle;
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.Stack;
 
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Arrays;
-import java.util.Map;
+import java.util.List;
 
 public class WordNet {
 
-    private final HashMap<Integer, Iterable<String>> keys;
+    private final HashMap<Integer, String> keys;
+    private final HashMap<String, List<Integer>> nouns;
     private final SAP sap;
-    private String previousA;
-    private String previousB;
-    private int[] previousResult;
-
-//    public WordNet() {
-//        digraph = new Digraph(0);
-//        keys = new HashMap<>();
-//        sap = new SAP(digraph);
-//    }
-
-//    public WordNet(int[][] edges, int count) {
-//        digraph = new Digraph(count);
-//        keys = new HashMap<>();
-//
-//        for (int[] edge: edges) {
-//            digraph.addEdge(edge[0], edge[1]);
-//        }
-//
-//        sap = new SAP(digraph);
-//
-//        for (int i = 0; i < count; i++) {
-//            List<String> list = new ArrayList<>();
-//            list.add(String.valueOf(i));
-//            keys.put(i, list);
-//        }
-//    }
 
     // constructor takes the name of the two input files
-    public WordNet(String synsets, String hypernyms) {
-        if (synsets == null || hypernyms == null) {
+    public WordNet(String fileS, String fileH) {
+        if (fileS == null || fileH == null) {
             throw new IllegalArgumentException();
         }
 
         keys = new HashMap<>();
+        nouns = new HashMap<>();
 
-        In fileSynsets = new In(synsets);
-        In fileHypernyms = new In(hypernyms);
+        In inSynsets = new In(fileS);
+        In inHypernyms = new In(fileH);
 
-        while (fileSynsets.hasNextLine()) {
-            String[] line = parseLine(fileSynsets);
+        while (inSynsets.hasNextLine()) {
+            String[] line = parseLine(inSynsets);
             int v = Integer.parseInt(line[0]);
-            String[] words = line[1].split("\\s+");
-            keys.put(v, Arrays.asList(words));
+            keys.put(v, line[1]);
+            String[] synsets = line[1].split(" ");
+            for (String noun: synsets) {
+                List<Integer> synsetIds;
+                if (nouns.containsKey(noun)) {
+                    synsetIds = nouns.get(noun);
+                }
+                else {
+                    synsetIds = new ArrayList<>();
+                }
+
+                synsetIds.add(v);
+                nouns.put(noun, synsetIds);
+            }
         }
 
         Digraph digraph = new Digraph(keys.size());
 
-        while (fileHypernyms.hasNextLine()) {
-            String[] line = parseLine(fileHypernyms);
+        while (inHypernyms.hasNextLine()) {
+            String[] line = parseLine(inHypernyms);
             int v = Integer.parseInt(line[0]);
             for (int i = 1; i < line.length; i++) {
                 int w = Integer.parseInt(line[i]);
                 digraph.addEdge(v, w);
             }
+        }
+
+        DirectedCycle finder = new DirectedCycle(digraph);
+        if (finder.hasCycle()) {
+            throw new IllegalArgumentException();
+        }
+
+        // Check if not rooted
+        int rooted = 0;
+        for (int i = 0; i < digraph.V(); i++) {
+            if (!digraph.adj(i).iterator().hasNext())
+                rooted++;
+        }
+
+        if (rooted != 1) {
+            throw new IllegalArgumentException("Not a rooted DAG");
         }
 
         sap = new SAP(digraph);
@@ -75,11 +79,7 @@ public class WordNet {
 
     // returns all WordNet nouns
     public Iterable<String> nouns() {
-        Stack<String> words = new Stack<>();
-        for (Iterable<String> elem: keys.values()) {
-            elem.forEach(words::push);
-        }
-        return words;
+        return nouns.keySet();
     }
 
     // is the word a WordNet noun?
@@ -88,15 +88,7 @@ public class WordNet {
             throw new IllegalArgumentException();
         }
 
-        for (Iterable<String> elem: keys.values()) {
-            for (String elem1: elem) {
-                if (elem1.equals(word)) {
-                    return true;
-                }
-            }
-        }
-
-        return false;
+        return nouns.containsKey(word);
     }
 
     // distance between nounA and nounB (defined below)
@@ -107,39 +99,7 @@ public class WordNet {
 
         if (nounA.equals(nounB)) return 0;
 
-        int[] result = runBfs(nounA, nounB);
-
-        return result[0];
-    }
-
-    private int[] runBfs(String nounA, String nounB) {
-        if (previousA != null && previousB != null && previousA.equals(nounA) && previousB.equals(nounB)) {
-            return previousResult;
-        }
-
-        Iterable<Integer> vertexesA = findNumbersForNoun(nounA);
-        Iterable<Integer> vertexesB = findNumbersForNoun(nounB);
-
-        int distance = sap.length(vertexesA, vertexesB);
-        int currSap = sap.ancestor(vertexesA, vertexesB);
-
-        previousA = nounA;
-        previousB = nounB;
-        previousResult = new int[]{ distance, currSap };
-        return previousResult;
-    }
-
-    private Iterable<Integer> findNumbersForNoun(String word) {
-        Stack<Integer> numbers = new Stack<>();
-        for (Map.Entry<Integer, Iterable<String>> nouns: keys.entrySet()) {
-            for (String el: nouns.getValue()) {
-                if (el.equals(word)) {
-                    numbers.push(nouns.getKey());
-                    break;
-                }
-            }
-        }
-        return numbers;
+        return sap.length(nouns.get(nounA), nouns.get(nounB));
     }
 
     // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
@@ -149,9 +109,9 @@ public class WordNet {
             throw new IllegalArgumentException();
         }
 
-        int[] result = runBfs(nounA, nounB);
+        int ancestor = sap.ancestor(nouns.get(nounA), nouns.get(nounB));
 
-        return keys.get(result[1]).iterator().next();
+        return keys.get(ancestor);
     }
 
     // do unit testing of this class

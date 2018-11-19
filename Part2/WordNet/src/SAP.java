@@ -2,19 +2,11 @@ import edu.princeton.cs.algs4.BreadthFirstDirectedPaths;
 import edu.princeton.cs.algs4.Digraph;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
+
 
 public class SAP {
     private final Digraph digraph;
-
-    private int[] lastValues;
-    private int[] previousManyValues;
-    private int[] resultValues;
-    private Iterable<Integer> previousA;
-    private Iterable<Integer> previousB;
-    private int root;
 
     // constructor takes a digraph (not necessarily a DAG)
     public SAP(Digraph G) {
@@ -22,18 +14,12 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
-        digraph = G;
-        for (int i = 0; i < digraph.V(); i++) {
-            if (digraph.outdegree(i) == 0) {
-                root = i;
-                break;
-            }
-        }
+        digraph = new Digraph(G);
     }
 
     // length of shortest ancestral path between v and w; -1 if no such path
     public int length(int v, int w) {
-        if (!isValid(v) || !isValid(w)) {
+        if (isIllegalArgument(v) || isIllegalArgument(w)) {
             throw new IllegalArgumentException();
         }
 
@@ -41,91 +27,60 @@ public class SAP {
         return result[0];
     }
 
-    private boolean isValid(int v) {
-        return v > 0 && v < digraph.V();
+    private boolean isIllegalArgument(int v) {
+        return v < 0 || v >= digraph.V();
+    }
+
+    private boolean isIllegalIterable(Iterable<Integer> v) {
+        List<Integer> list = new ArrayList<>();
+        v.forEach(list::add);
+        return list.isEmpty();
     }
 
     private int[] runBfs(int vertexA, int vertexB) {
-        if (lastValues != null && lastValues[0] == vertexA && lastValues[1] == vertexB) {
-            return resultValues;
-        }
-
-        lastValues = new int[]{ vertexA, vertexB };
-
-        Digraph reGraph = digraph.reverse();
         int distance = Integer.MAX_VALUE;
         int sap = -1;
 
-        BreadthFirstDirectedPaths bfs = new BreadthFirstDirectedPaths(reGraph, root);
-        if (!bfs.hasPathTo(vertexA) || !bfs.hasPathTo(vertexB)) {
-            resultValues = new int[]{ -1, -1 };
-            return resultValues;
-        }
+        BreadthFirstDirectedPaths bfsA = new BreadthFirstDirectedPaths(digraph, vertexA);
+        BreadthFirstDirectedPaths bfsB = new BreadthFirstDirectedPaths(digraph, vertexB);
 
-        Iterator<Integer> iteratorA = bfs.pathTo(vertexA).iterator();
-        Iterator<Integer> iteratorB = bfs.pathTo(vertexB).iterator();
-        while (iteratorA.hasNext() && iteratorB.hasNext()) {
-            int elemA = iteratorA.next();
-            int elemB = iteratorB.next();
-            if (elemA == elemB) {
-                if (elemA != root) {
-                    bfs = new BreadthFirstDirectedPaths(reGraph, elemA);
+        for (int i = 0; i < digraph.V(); i++) {
+            if (bfsA.hasPathTo(i) && bfsB.hasPathTo(i)) {
+                int currentDistance = bfsA.distTo(i) + bfsB.distTo(i);
+                if (currentDistance < distance) {
+                    distance = currentDistance;
+                    sap = i;
                 }
-                int currDist = bfs.distTo(vertexA) + bfs.distTo(vertexB);
-                if (distance > currDist) {
-                    distance = currDist;
-                    sap = elemA;
-                }
-                continue;
             }
-            break;
         }
 
-        resultValues = new int[]{ distance, sap };
-        return resultValues;
+        if (sap == -1) distance = -1;
+
+        return new int[]{ distance, sap };
     }
 
     private int[] findMinDistAndSap(Iterable<Integer> first, Iterable<Integer> second) {
-        if (previousA != null && previousB != null && areEqualsIterable(first, previousA) && areEqualsIterable(second, previousB)) {
-            return previousManyValues;
-        }
-
         int distanceMany = Integer.MAX_VALUE;
         int sapMany = 0;
-        for (int vertexA: first) {
-            for (int vertexB: second) {
-                int[] values = runBfs(vertexA, vertexB);
-                int distance = values[0];
-                int sap = values[1];
-                if (distance < distanceMany) {
-                    distanceMany = distance;
-                    sapMany = sap;
+
+        BreadthFirstDirectedPaths bfs1 = new BreadthFirstDirectedPaths(digraph, first);
+        BreadthFirstDirectedPaths bfs2 = new BreadthFirstDirectedPaths(digraph, second);
+        for (int i = 0; i < digraph.V(); i++) {
+            if (bfs1.hasPathTo(i) && bfs2.hasPathTo(i)) {
+                int curr = bfs1.distTo(i) + bfs2.distTo(i);
+                if (curr < distanceMany) {
+                    distanceMany = curr;
+                    sapMany = i;
                 }
             }
         }
 
-
-        previousA = first;
-        previousB = second;
-        previousManyValues = new int[] { distanceMany, sapMany };
-        return previousManyValues;
-    }
-
-    private boolean areEqualsIterable(Iterable<Integer> valuesA, Iterable<Integer> valuesB) {
-        List<Integer> listA = new ArrayList<>();
-        valuesA.forEach(listA::add);
-
-        List<Integer> listB = new ArrayList<>();
-        valuesB.forEach(listB::add);
-
-        if (listA.size() != listB.size()) return false;
-
-        return new HashSet<>(listA).equals(new HashSet<>(listB));
+        return new int[] { distanceMany, sapMany };
     }
 
     // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
     public int ancestor(int v, int w) {
-        if (!isValid(v) || !isValid(w)) {
+        if (isIllegalArgument(v) || isIllegalArgument(w)) {
             throw new IllegalArgumentException();
         }
 
@@ -139,6 +94,13 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
+        if (isIllegalIterable(v) || isIllegalIterable(w)) {
+            return -1;
+        }
+
+        containsNullValue(v);
+        containsNullValue(w);
+
         int[] result = findMinDistAndSap(v, w);
         return result[0];
     }
@@ -149,21 +111,25 @@ public class SAP {
             throw new IllegalArgumentException();
         }
 
+        if (isIllegalIterable(v) || isIllegalIterable(w)) {
+            return -1;
+        }
+
+        containsNullValue(v);
+        containsNullValue(w);
+
         int[] result = findMinDistAndSap(v, w);
         return result[1];
     }
 
+    private  void containsNullValue(Iterable<Integer> v) {
+        for (Integer elem: v) {
+            if (elem == null) throw new IllegalArgumentException();
+        }
+    }
+
     // do unit testing of this class
     public static void main(String[] args) {
-//        In in = new In(args[0]);
-//        Digraph G = new Digraph(in);
-//        SAP sap = new SAP(G);
-//        while (!StdIn.isEmpty()) {
-//            int v = StdIn.readInt();
-//            int w = StdIn.readInt();
-//            int length = sap.length(v, w);
-//            int ancestor = sap.ancestor(v, w);
-//            StdOut.printf("length = %d, ancestor = %d\n", length, ancestor);
-//        }
+        // optional
     }
 }

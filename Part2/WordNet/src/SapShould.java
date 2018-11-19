@@ -1,6 +1,9 @@
 import edu.princeton.cs.algs4.Digraph;
+import edu.princeton.cs.algs4.In;
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Stack;
 
 public class SapShould {
     private SAP sap;
@@ -35,63 +38,209 @@ public class SapShould {
         sap = new SAP(null);
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void ThrowAnIllegalArgumentExceptionInLengthFunction() {
-        createSap(example1, example1_verticesCount);
-        sap.length(-1, 2);
+    private SAP initSapFromDigraph(String file) {
+        Digraph digraph = new Digraph(new In(file));
+        return new SAP(digraph);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void ThrowAnIllegalArgumentExceptionInAncestorFunction() {
-        createSap(example1, example1_verticesCount);
-        sap.ancestor(-1, 2);
+    public void ThrowAnExceptionIfNonValidArgumentForAncestor() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        sap.ancestor(13, 0);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void ThrowAnIllegalArgumentExceptionInLengthFunctionForMany() {
-        createSap(example1, example1_verticesCount);
-        sap.length(null, null);
+    public void ThrowAnExceptionIfNonValidArgumentForLength() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        sap.length(13, 0);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void ThrowAnIllegalArgumentExceptionInAncestorFunctionForMany() {
-        createSap(example1, example1_verticesCount);
-        sap.ancestor(null, null);
+    public void ThrowAnExceptionIfIterableContainsNullForAncestor() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var list1 = new Stack<Integer>();
+        list1.push(1);
+        list1.push(2);
+        list1.push(null);
+        list1.push(4);
+        var list2 = new Stack<Integer>();
+        list2.push(1);
+        sap.ancestor(list2, list1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ThrowAnExceptionIfIterableContainsNullForLength() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var list1 = new Stack<Integer>();
+        list1.push(1);
+        list1.push(2);
+        list1.push(null);
+        list1.push(4);
+        var list2 = new Stack<Integer>();
+        list2.push(1);
+        sap.length(list1, list2);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ThrowAnExceptionIfIterableContainsIllegalElementForAncestor() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var list1 = new Stack<Integer>();
+        list1.push(13);
+        list1.push(1);
+        list1.push(2);
+        list1.push(3);
+        list1.push(4);
+        list1.push(10);
+        var list2 = new Stack<Integer>();
+        list2.push(6);
+        list2.push(8);
+        list2.push(2);
+        sap.ancestor(list1, list2);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ThrowAnExceptionIfIterableContainsIllegalElementForLength() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var list1 = new Stack<Integer>();
+        list1.push(1);
+        list1.push(2);
+        list1.push(13);
+        list1.push(4);
+        var list2 = new Stack<Integer>();
+        list2.push(1);
+        sap.length(list1, list2);
     }
 
     @Test
-    public void ReturnLengthAndAncestorForPair1InExample1() {
-        createSap(example1, example1_verticesCount);
-        var distance = sap.length(3,11);
-        var ancestor = sap.ancestor(3,11);
-        Assert.assertEquals(4, distance);
+    public void ReturnLengthAndAncestorForDigraph11() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var distance = sap.length(7,4);
+        var ancestor = sap.ancestor(7,4);
+        Assert.assertEquals(3, distance);
         Assert.assertEquals(1, ancestor);
     }
 
     @Test
-    public void ReturnLengthAndAncestorForPair2InExample1() {
-        createSap(example1, example1_verticesCount);
-        var distance = sap.length(9,12);
-        var ancestor = sap.ancestor(9,12);
-        Assert.assertEquals(3, distance);
-        Assert.assertEquals(5, ancestor);
-    }
-
-    @Test
-    public void ReturnLengthAndAncestorForPair3InExample1() {
-        createSap(example1, example1_verticesCount);
-        var distance = sap.length(7,2);
-        var ancestor = sap.ancestor(7,2);
-        Assert.assertEquals(4, distance);
-        Assert.assertEquals(0, ancestor);
-    }
-
-    @Test
-    public void ReturnLengthAndAncestorForPair4InExample1() {
-        createSap(example1, example1_verticesCount);
-        var distance = sap.length(1,6);
-        var ancestor = sap.ancestor(1,6);
+    public void ReturnLengthAndAncestorForDigraph12() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var distance = sap.length(2,6);
+        var ancestor = sap.ancestor(2,6);
         Assert.assertEquals(-1, distance);
         Assert.assertEquals(-1, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph13() {
+        sap = initSapFromDigraph("data\\digraph1.txt");
+        var distance = sap.length(0,6);
+//        var ancestor = sap.ancestor(0,6);
+        Assert.assertEquals(-1, distance);
+//        Assert.assertEquals(-1, ancestor);
+    }
+
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph21() {
+        sap = initSapFromDigraph("data\\digraph2.txt");
+        var distance = sap.length(1,3);
+        Assert.assertEquals(2, distance);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph22() {
+        sap = initSapFromDigraph("data\\digraph2.txt");
+        var distance = sap.length(1,5);
+        Assert.assertEquals(2, distance);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph3() {
+        sap = initSapFromDigraph("data\\digraph3.txt");
+        var distance = sap.length(14,8);
+        var ancestor = sap.ancestor(14,8);
+        Assert.assertEquals(4, distance);
+        Assert.assertEquals(8, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph31() {
+        sap = initSapFromDigraph("data\\digraph3.txt");
+        var distance = sap.length(7,12);
+//        var ancestor = sap.ancestor(7,12);
+        Assert.assertEquals(2, distance);
+//        Assert.assertEquals(2, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph32() {
+        sap = initSapFromDigraph("data\\digraph3.txt");
+        var distance = sap.length(0,7);
+//        var ancestor = sap.ancestor(7,12);
+        Assert.assertEquals(4, distance);
+//        Assert.assertEquals(2, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph5() {
+        sap = initSapFromDigraph("data\\digraph5.txt");
+        var distance = sap.length(9,12);
+//        var ancestor = sap.ancestor(9,12);
+        Assert.assertEquals(3, distance);
+//        Assert.assertEquals(8, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph9() {
+        sap = initSapFromDigraph("data\\digraph9.txt");
+        var distance = sap.length(8,5);
+        var ancestor = sap.ancestor(8,5);
+        Assert.assertEquals(1, distance);
+        Assert.assertEquals(8, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph91() {
+        sap = initSapFromDigraph("data\\digraph9.txt");
+        var distance = sap.length(3,4);
+        Assert.assertEquals(1, distance);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph92() {
+        sap = initSapFromDigraph("data\\digraph9.txt");
+        var distance = sap.length(8,4);
+        var ancestor = sap.ancestor(8,4);
+        Assert.assertEquals(-1, distance);
+        Assert.assertEquals(-1, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraph93() {
+        sap = initSapFromDigraph("data\\digraph9.txt");
+        var distance = sap.length(5,3);
+//        var ancestor = sap.ancestor(5,3);
+        Assert.assertEquals(2, distance);
+//        Assert.assertEquals(-1, ancestor);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraphWordnet1() {
+        sap = initSapFromDigraph("data\\digraph-wordnet.txt");
+        var distance = sap.length(57201,47105);
+        Assert.assertEquals(12, distance);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraphWordnet12() {
+        sap = initSapFromDigraph("data\\digraph-wordnet.txt");
+        var distance = sap.length(55395,68394);
+        Assert.assertEquals(8, distance);
+    }
+
+    @Test
+    public void ReturnLengthAndAncestorForDigraphWordnet() {
+        sap = initSapFromDigraph("data\\digraph-wordnet.txt");
+        var distance = sap.length(55395,68394);
+        Assert.assertEquals(8, distance);
     }
 }
