@@ -32,7 +32,10 @@ public class SeamCarver {
         }
 
         double energy = 0.0;
-        Color color = picture.get(x, y);
+        int color = picture.getRGB(x, y);
+        int red = (color >> 16) & 0xFF;
+        int green = (color >> 8) & 0xFF;
+        int blue = color & 0xFF;
         for (int i = -1; i <= 1; i += 2) {
             for (int j = -1; j <= 1; j += 2) {
                 int currX = x + i;
@@ -42,10 +45,13 @@ public class SeamCarver {
                     continue;
                 }
 
-                Color tempPixelColor = picture.get(currX, currY);
-                energy += Math.pow(color.getRed() - tempPixelColor.getRed(), 2) +
-                        Math.pow(color.getGreen() - tempPixelColor.getGreen(), 2) +
-                        Math.pow(color.getBlue() - tempPixelColor.getBlue(), 2);
+                int tempColor = picture.getRGB(currX, currY);
+                int tempRed = (tempColor >> 16) & 0xFF;
+                int tempGreen = (tempColor >> 8) & 0xFF;
+                int tempBlue = tempColor & 0xFF;
+                energy += Math.pow(red - tempRed, 2) +
+                        Math.pow(green - tempGreen, 2) +
+                        Math.pow(blue - tempBlue, 2);
             }
         }
 
@@ -82,27 +88,71 @@ public class SeamCarver {
 
     // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
-        return null;
+        int[] seam = new int[picture.width()];
+
+        double min = Double.POSITIVE_INFINITY;
+        int pos = 0;
+
+        for (int j = 1; j < picture.height() - 1; j++) {
+            if (min > pixelsEnergy[1][j]) {
+                min = pixelsEnergy[1][j];
+                pos = j;
+            }
+        }
+
+        seam[0] = pos;
+        seam[1] = pos;
+
+        for (int j = 2; j < picture.width(); j++) {
+            int currMinPos = pos - 1;
+            for (int i = 0; i <= 1; i++) {
+                if (pixelsEnergy[j][pos + i] < pixelsEnergy[j][currMinPos]) {
+                    currMinPos = pos + i;
+                }
+            }
+            seam[j] = currMinPos;
+            pos = currMinPos;
+        }
+
+        seam[picture.width() - 1] = pos;
+
+        return seam;
     }
 
     // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
-        int[] seam = new int[height()];
+        int[] seam = new int[picture.height()];
 
         double min = Double.POSITIVE_INFINITY;
         int pos = 0;
-        for (int i = 0; i < width(); i++) {
 
-        }
-
-
-        for (int j = 1; j < height(); j++) {
-            for (int i = 0; i < width(); i++) {
-
+        // we have to found the pixel with min energy in 2nd row
+        for (int i = 1; i < picture.width() - 1; i++) {
+            if (min > pixelsEnergy[i][1]) {
+                min = pixelsEnergy[i][1];
+                pos = i;
             }
         }
+        // set the same value in the first row pixel's index with min energy as the second
+        seam[0] = pos;
+        seam[1] = pos;
 
-        return null;
+        // find the min energy between the nearest pixels from the pos in the previous row
+        for (int i = 2; i < picture.height() - 1; i++) {
+            int currMinPos = pos - 1;
+            for (int j = 0; j <= 1; j++) {
+                if (pixelsEnergy[pos + j][i] < pixelsEnergy[currMinPos][i]) {
+                    currMinPos = pos + j;
+                }
+            }
+            seam[i] = currMinPos;
+            pos = currMinPos;
+        }
+
+        // set the same index as the previous row pixel's index
+        seam[picture.height() - 1] = pos;
+
+        return seam;
     }
 
     // remove horizontal seam from current picture
@@ -129,5 +179,7 @@ public class SeamCarver {
         }
 
         checkEveryPixelOfSeam(seam);
+
+
     }
 }

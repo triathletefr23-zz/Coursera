@@ -10,7 +10,7 @@ public class SeamCarverShould {
     private final static String PATH_OCEAN = "data\\HJoceanSmall.png";
 
     public SeamCarverShould() {
-        examplePicture = new Picture(PATH_EXAMPLE);
+        examplePicture = new Picture(PATH_OCEAN);
         seamCarver = new SeamCarver(examplePicture);
     }
 
@@ -81,5 +81,17 @@ public class SeamCarverShould {
     @Test
     public void ReturnEnergyOfNormalPixel() {
         Assert.assertTrue(seamCarver.energy(1, 1) > 0);
+    }
+
+    @Test
+    public void ReturnVerticalSeamWithHeightOfPicture() {
+        var verticalSeam = seamCarver.findVerticalSeam();
+        Assert.assertEquals(seamCarver.height(), verticalSeam.length);
+    }
+
+    @Test
+    public void ReturnVerticalSeamWithWidthOfPicture() {
+        var horizontalSeam = seamCarver.findHorizontalSeam();
+        Assert.assertEquals(seamCarver.width(), horizontalSeam.length);
     }
 }
