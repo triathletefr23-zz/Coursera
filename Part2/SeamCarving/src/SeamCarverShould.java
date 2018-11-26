@@ -6,9 +6,11 @@ public class SeamCarverShould {
     private SeamCarver seamCarver;
     private Picture examplePicture;
     private final static double DELTA = 0.001;
+    private final static String PATH_EXAMPLE = "data\\example.png";
+    private final static String PATH_OCEAN = "data\\HJoceanSmall.png";
 
     public SeamCarverShould() {
-        examplePicture = new Picture("data\\HJoceanSmall.png");
+        examplePicture = new Picture(PATH_EXAMPLE);
         seamCarver = new SeamCarver(examplePicture);
     }
 
@@ -78,6 +80,6 @@ public class SeamCarverShould {
 
     @Test
     public void ReturnEnergyOfNormalPixel() {
-        Assert.assertEquals(0, seamCarver.energy(1, 1), DELTA);
+        Assert.assertTrue(seamCarver.energy(1, 1) > 0);
     }
 }
