@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4fe315e-adc2-41b2-b7c9-0e4f115c6f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SeamCarver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SeamCarverShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WordNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WordNet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeamCarver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeamCarver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeamCarverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeamCarverShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1342" />
+          <entry key="java" value="2751" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1342" />
+          <entry key="JAVA" value="2751" />
         </counts>
       </usages-collector>
     </session>
@@ -51,8 +50,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SeamCarverShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="403">
-                  <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+                <state relative-caret-position="410">
+                  <caret line="80" column="63" lean-forward="true" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="63" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#440#441#0" expanded="true" />
@@ -67,6 +66,8 @@
                     <element signature="e#1166#1167#0" expanded="true" />
                     <element signature="e#1295#1296#0" expanded="true" />
                     <element signature="e#1346#1347#0" expanded="true" />
+                    <element signature="e#2848#2849#0" expanded="true" />
+                    <element signature="e#2869#2870#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -79,18 +80,26 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SeamCarver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="505">
-                  <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+                <state relative-caret-position="169">
+                  <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
                   <folding>
+                    <element signature="imports" expanded="true" />
                     <element signature="e#383#384#0" expanded="true" />
                     <element signature="e#421#422#0" expanded="true" />
                     <element signature="e#481#482#0" expanded="true" />
                     <element signature="e#520#521#0" expanded="true" />
-                    <element signature="e#940#941#0" expanded="true" />
-                    <element signature="e#967#968#0" expanded="true" />
-                    <element signature="e#1051#1052#0" expanded="true" />
-                    <element signature="e#1078#1079#0" expanded="true" />
+                    <element signature="e#1788#1789#0" expanded="true" />
+                    <element signature="e#1815#1816#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Picture.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="488">
+                  <caret line="293" column="30" lean-forward="true" selection-start-line="293" selection-start-column="30" selection-end-line="293" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -105,6 +114,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>energy</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -155,7 +169,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543181677333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543219393299" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../stdlib.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -173,11 +187,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeamCarverShould.ThrowAnExceptionIfThereArePixelsWithTheStepInTwoPixels">
-    <configuration name="SeamCarverShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SeamCarverShould.ReturnEnergyOfNormalPixel">
+    <configuration name="SeamCarverShould.ReturnAThousandIfPixelIsOnTheBorder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeamCarving" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
+      <option name="METHOD_NAME" value="ReturnAThousandIfPixelIsOnTheBorder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeamCarverShould.ReturnEnergyOfNormalPixel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeamCarving" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
+      <option name="METHOD_NAME" value="ReturnEnergyOfNormalPixel" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,30 +238,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeamCarverShould.ThrowAnExceptionIfVerticalSeamToRemoveIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeamCarving" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
-      <option name="METHOD_NAME" value="ThrowAnExceptionIfVerticalSeamToRemoveIsNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.SeamCarverShould" />
-      <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfVerticalSeamToRemoveIsNull" />
       <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfLengthOfVerticalSeamIsMoreThanHeight" />
       <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfLengthOfHorizontalSeamIsMoreThanWidth" />
       <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfThereArePixelsWithTheStepInTwoPixels" />
+      <item itemvalue="JUnit.SeamCarverShould.ReturnAThousandIfPixelIsOnTheBorder" />
+      <item itemvalue="JUnit.SeamCarverShould.ReturnEnergyOfNormalPixel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SeamCarverShould.ReturnEnergyOfNormalPixel" />
+        <item itemvalue="JUnit.SeamCarverShould.ReturnAThousandIfPixelIsOnTheBorder" />
         <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfThereArePixelsWithTheStepInTwoPixels" />
         <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfLengthOfHorizontalSeamIsMoreThanWidth" />
         <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfLengthOfVerticalSeamIsMoreThanHeight" />
-        <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfVerticalSeamToRemoveIsNull" />
-        <item itemvalue="JUnit.SeamCarverShould" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +287,18 @@
     <history-entry file="SeamCarverShould_ThrowAnExceptionIfThereArePixelsWithTheStepInTwoPixels - 2018.11.25 at 22h 33m 02s.xml">
       <configuration name="SeamCarverShould.ThrowAnExceptionIfThereArePixelsWithTheStepInTwoPixels" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SeamCarverShould_ReturnAThousandIfPixelIsOnTheBorder - 2018.11.26 at 08h 24m 02s.xml">
+      <configuration name="SeamCarverShould.ReturnAThousandIfPixelIsOnTheBorder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeamCarverShould_ReturnAThousandIfPixelIsOnTheBorder - 2018.11.26 at 08h 24m 32s.xml">
+      <configuration name="SeamCarverShould.ReturnAThousandIfPixelIsOnTheBorder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeamCarverShould_ReturnAThousandIfPixelIsOnTheBorder - 2018.11.26 at 08h 25m 09s.xml">
+      <configuration name="SeamCarverShould.ReturnAThousandIfPixelIsOnTheBorder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeamCarverShould_ReturnEnergyOfNormalPixel - 2018.11.26 at 08h 27m 12s.xml">
+      <configuration name="SeamCarverShould.ReturnEnergyOfNormalPixel" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
@@ -281,12 +309,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12313433" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12313433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32994923" />
@@ -303,6 +331,34 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12313433" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32994923" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -310,8 +366,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SeamCarverShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="410">
+          <caret line="80" column="63" lean-forward="true" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
@@ -326,23 +382,31 @@
             <element signature="e#1166#1167#0" expanded="true" />
             <element signature="e#1295#1296#0" expanded="true" />
             <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
+            <element signature="e#2869#2870#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Picture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="293" column="30" lean-forward="true" selection-start-line="293" selection-start-column="30" selection-end-line="293" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SeamCarver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        <state relative-caret-position="169">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
             <element signature="e#421#422#0" expanded="true" />
             <element signature="e#481#482#0" expanded="true" />
             <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
           </folding>
         </state>
       </provider>

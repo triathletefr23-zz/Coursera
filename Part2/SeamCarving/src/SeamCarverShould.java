@@ -1,9 +1,11 @@
 import edu.princeton.cs.algs4.Picture;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class SeamCarverShould {
     private SeamCarver seamCarver;
     private Picture examplePicture;
+    private final static double DELTA = 0.001;
 
     public SeamCarverShould() {
         examplePicture = new Picture("data\\HJoceanSmall.png");
@@ -64,5 +66,18 @@ public class SeamCarverShould {
         seam[1] = 1;
         seam[2] = 3;
         seamCarver.removeVerticalSeam(seam);
+    }
+
+    @Test
+    public void ReturnAThousandIfPixelIsOnTheBorder() {
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(0, 1), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(1, 0), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(1, seamCarver.height() - 1), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(seamCarver.width() - 1, 1), DELTA);
+    }
+
+    @Test
+    public void ReturnEnergyOfNormalPixel() {
+        Assert.assertEquals(0, seamCarver.energy(1, 1), DELTA);
     }
 }
