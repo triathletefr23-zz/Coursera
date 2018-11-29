@@ -8,11 +8,18 @@ public class SeamCarverShould {
     private SeamCarver seamCarver;
     private Picture examplePicture;
     private final static double DELTA = 0.001;
+    private final static String PATH_3x4 = "data\\3x4.png";
+    private final static String PATH_6x5 = "data\\6x5.png";
     private final static String PATH_EXAMPLE = "data\\example.png";
     private final static String PATH_OCEAN = "data\\HJoceanSmall.png";
 
     public SeamCarverShould() {
-        examplePicture = new Picture(PATH_OCEAN);
+        examplePicture = new Picture(PATH_EXAMPLE);
+        seamCarver = new SeamCarver(examplePicture);
+    }
+
+    private void init(String picture_path) {
+        examplePicture = new Picture(picture_path);
         seamCarver = new SeamCarver(examplePicture);
     }
 
@@ -95,6 +102,22 @@ public class SeamCarverShould {
     public void ReturnVerticalSeamWithWidthOfPicture() {
         var horizontalSeam = seamCarver.findHorizontalSeam();
         Assert.assertEquals(seamCarver.width(), horizontalSeam.length);
+    }
+
+    @Test
+    public void ReturnVerticalSeamFor3x4Picture() {
+        init(PATH_3x4);
+        var verticalSeam = seamCarver.findVerticalSeam();
+        var expected = new int[] { 1, 1, 1, 1 };
+        Assert.assertTrue(Arrays.equals(expected, verticalSeam));
+    }
+
+    @Test
+    public void ReturnVerticalSeamFor6x5Picture() {
+        init(PATH_6x5);
+        var verticalSeam = seamCarver.findVerticalSeam();
+        var expected = new int[] { 3, 4, 3, 2, 2 };
+        Assert.assertTrue(Arrays.equals(expected, verticalSeam));
     }
 
 //    @Test

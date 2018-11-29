@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4fe315e-adc2-41b2-b7c9-0e4f115c6f25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PrintEnergy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrintSeams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SeamCarver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeamCarver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SeamCarverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SeamCarverShould.java" afterDir="false" />
     </list>
@@ -15,6 +12,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SeamCarving$SeamCarverShould_ReturnVerticalSeamFor6x5Picture.ic" NAME="SeamCarverShould.ReturnVerticalSeamFor6x5Picture Coverage Results" MODIFIED="1543474854829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SeamCarving$SeamCarverShould_ReturnVerticalSeamFor3x4Picture.ic" NAME="SeamCarverShould.ReturnVerticalSeamFor3x4Picture Coverage Results" MODIFIED="1543477477721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-150606242">
@@ -28,23 +29,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="15" />
+          <entry key="java" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5988" />
+          <entry key="java" value="7026" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5988" />
+          <entry key="JAVA" value="7026" />
         </counts>
       </usages-collector>
     </session>
@@ -56,10 +57,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SeamCarverShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="96" column="71" lean-forward="true" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
+                <state relative-caret-position="424">
+                  <caret line="119" selection-start-line="119" selection-end-line="119" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#962#963#0" expanded="true" />
+                    <element signature="e#1002#1003#0" expanded="true" />
                     <element signature="e#3016#3017#0" expanded="true" />
                     <element signature="e#3078#3079#0" expanded="true" />
                   </folding>
@@ -74,8 +77,48 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SeamCarver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="381">
-                  <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+                <state relative-caret-position="331">
+                  <caret line="117" column="60" lean-forward="true" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
+                  <folding>
+                    <element signature="method#transposePixelsEnergy#0;class#SeamCarver#0" />
+                    <element signature="e#2577#2578#0" expanded="true" />
+                    <element signature="e#2612#2613#0" expanded="true" />
+                    <element signature="e#2670#2671#0" expanded="true" />
+                    <element signature="e#2708#2709#0" expanded="true" />
+                    <element signature="e#2768#2769#0" expanded="true" />
+                    <element signature="e#2807#2808#0" expanded="true" />
+                    <element signature="method#energy#0;class#SeamCarver#0" />
+                    <element signature="e#5275#5512#0" />
+                    <element signature="e#5209#5479#0" />
+                    <element signature="e#5728#5998#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Picture.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="262">
+                  <caret line="311" selection-start-line="311" selection-end-line="311" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Graph.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-688">
+                  <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/DepthFirstSearch.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="480">
+                  <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -95,9 +138,13 @@
     <findStrings>
       <find>energy</find>
       <find>isEnergyCounted</find>
+      <find>BORDER_ENERGY</find>
+      <find>colorXDown</find>
     </findStrings>
     <replaceStrings>
       <replace>isEnergyCalculated</replace>
+      <replace>colorUp</replace>
+      <replace>colorDown</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -107,10 +154,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/SeamCurverShould.java" />
-        <option value="$PROJECT_DIR$/src/SeamCarver.java" />
-        <option value="$PROJECT_DIR$/src/SeamCarverShould.java" />
         <option value="$PROJECT_DIR$/src/PrintSeams.java" />
         <option value="$PROJECT_DIR$/src/PrintEnergy.java" />
+        <option value="$PROJECT_DIR$/src/SeamCarverShould.java" />
+        <option value="$PROJECT_DIR$/src/SeamCarver.java" />
       </list>
     </option>
   </component>
@@ -151,7 +198,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543471597136" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543478937354" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../stdlib.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -170,17 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeamCarverShould.ReturnTransposedMatrix2">
-    <configuration name="SeamCarverShould.ReturnTransposedMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeamCarving" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
-      <option name="METHOD_NAME" value="ReturnTransposedMatrix" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SeamCarverShould.ReturnVerticalSeamFor6x5Picture">
     <configuration name="SeamCarverShould.ReturnTransposedMatrix1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeamCarving" />
       <option name="PACKAGE_NAME" value="" />
@@ -201,40 +238,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeamCarverShould.ReturnVerticalSeamWithHeightOfPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeamCarverShould.ReturnVerticalSeamFor3x4Picture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeamCarving" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
-      <option name="METHOD_NAME" value="ReturnVerticalSeamWithHeightOfPicture" />
+      <option name="METHOD_NAME" value="ReturnVerticalSeamFor3x4Picture" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeamCarverShould.ReturnVerticalSeamWithWidthOfPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeamCarving" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
-      <option name="METHOD_NAME" value="ReturnVerticalSeamWithWidthOfPicture" />
+      <option name="METHOD_NAME" value="ReturnVerticalSeamFor6x5Picture" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeamCarverShould.ThrowAnExceptionIfIllegalCoordinateX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeamCarving" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SeamCarverShould" />
+      <option name="METHOD_NAME" value="ThrowAnExceptionIfIllegalCoordinateX" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamWithHeightOfPicture" />
-      <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamWithWidthOfPicture" />
-      <item itemvalue="JUnit.SeamCarverShould.ReturnTransposedMatrix" />
       <item itemvalue="JUnit.SeamCarverShould.ReturnTransposedMatrix1" />
       <item itemvalue="JUnit.SeamCarverShould.ReturnTransposedMatrix2" />
+      <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamFor6x5Picture" />
+      <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamFor3x4Picture" />
+      <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfIllegalCoordinateX" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamFor6x5Picture" />
+        <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamFor3x4Picture" />
+        <item itemvalue="JUnit.SeamCarverShould.ThrowAnExceptionIfIllegalCoordinateX" />
         <item itemvalue="JUnit.SeamCarverShould.ReturnTransposedMatrix2" />
         <item itemvalue="JUnit.SeamCarverShould.ReturnTransposedMatrix1" />
-        <item itemvalue="JUnit.SeamCarverShould.ReturnTransposedMatrix" />
-        <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamWithWidthOfPicture" />
-        <item itemvalue="JUnit.SeamCarverShould.ReturnVerticalSeamWithHeightOfPicture" />
       </list>
     </recent_temporary>
   </component>
@@ -252,42 +299,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 08h 53m 41s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor3x4Picture - 2018.11.29 at 09h 04m 07s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor3x4Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 08h 54m 41s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor3x4Picture - 2018.11.29 at 09h 05m 06s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor3x4Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 20h 50m 41s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor3x4Picture - 2018.11.29 at 09h 05m 11s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor3x4Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 20h 50m 50s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 05m 14s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 20h 51m 13s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 05m 19s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 20h 51m 58s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 06m 04s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 20h 52m 27s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 07m 27s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix - 2018.11.28 at 20h 52m 46s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 07m 41s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix1 - 2018.11.28 at 20h 55m 00s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix1" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 08m 37s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeamCarverShould_ReturnTransposedMatrix2 - 2018.11.28 at 20h 55m 03s.xml">
-      <configuration name="SeamCarverShould.ReturnTransposedMatrix2" configurationId="JUnit" />
+    <history-entry file="SeamCarverShould_ReturnVerticalSeamFor6x5Picture - 2018.11.29 at 09h 08m 51s.xml">
+      <configuration name="SeamCarverShould.ReturnVerticalSeamFor6x5Picture" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.124200426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -297,7 +344,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -305,6 +352,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32994923" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -351,6 +399,7 @@
       <configuration name="JUnit">
         <watch expression="pixelsEnergy" language="JAVA" />
         <watch expression="((Object[])e.backtrace)[2]" custom="java.lang.Object[]" />
+        <watch expression="pixelsEnergy[i][1]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -366,13 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Picture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="291" column="17" selection-start-line="291" selection-start-column="17" selection-end-line="291" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -394,18 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SeamCarverShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="96" column="71" lean-forward="true" selection-start-line="96" selection-start-column="71" selection-end-line="96" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3016#3017#0" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PrintSeams.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1848">
@@ -417,10 +447,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Topological.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/DepthFirstSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-688">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/EdgeWeightedDigraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2764">
+          <caret line="738" column="23" selection-start-line="738" selection-start-column="23" selection-end-line="738" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Picture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SeamCarverShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#3016#3017#0" expanded="true" />
+            <element signature="e#3078#3079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SeamCarver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="331">
+          <caret line="117" column="60" lean-forward="true" selection-start-line="117" selection-start-column="60" selection-end-line="117" selection-end-column="60" />
+          <folding>
+            <element signature="method#transposePixelsEnergy#0;class#SeamCarver#0" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2612#2613#0" expanded="true" />
+            <element signature="e#2670#2671#0" expanded="true" />
+            <element signature="e#2708#2709#0" expanded="true" />
+            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#2807#2808#0" expanded="true" />
+            <element signature="method#energy#0;class#SeamCarver#0" />
+            <element signature="e#5275#5512#0" />
+            <element signature="e#5209#5479#0" />
+            <element signature="e#5728#5998#0" />
+          </folding>
         </state>
       </provider>
     </entry>

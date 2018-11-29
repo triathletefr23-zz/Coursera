@@ -36,36 +36,41 @@ public class SeamCarver {
         }
     }
 
-    private double calculateEnergyForPixel(int x, int y) {
-        if (x == 0 || x == picture.width() - 1 || y == 0 || y == picture.height() - 1) {
-            return BORDER_ENERGY;
+    private boolean isBorderPixel(int x, int y) {
+        return x == 0 || x == picture.width() - 1 || y == 0 || y == picture.height() - 1;
+    }
+
+    private int getColor(int color, int colorNumber) {
+        switch (colorNumber) {
+            case 0: return (color >> 16) & 0xFF;
+            case 1: return (color >> 8) & 0xFF;
+            case 2: return color & 0xFF;
+            default: return 0;
         }
+    }
+
+    private double calculateEnergyForPixel(int x, int y) {
+        if (isBorderPixel(x, y)) {
+            return Math.pow(BORDER_ENERGY, 2);
+//            return BORDER_ENERGY;
+        }
+
+        int colorUp = picture.getRGB(x - 1, y);
+        int colorDown = picture.getRGB(x + 1, y);
 
         double energy = 0.0;
-        int color = picture.getRGB(x, y);
-        int red = (color >> 16) & 0xFF;
-        int green = (color >> 8) & 0xFF;
-        int blue = color & 0xFF;
-        for (int i = -1; i <= 1; i += 2) {
-            for (int j = -1; j <= 1; j += 2) {
-                int currX = x + i;
-                int currY = y + j;
+        energy += Math.pow(getColor(colorUp, 0) - getColor(colorDown, 0), 2) +
+                Math.pow(getColor(colorUp, 1) - getColor(colorDown, 1), 2) +
+                Math.pow(getColor(colorUp, 2) - getColor(colorDown, 2), 2);
 
-                if (isNonValidIndexes(currX, currY)) {
-                    continue;
-                }
-
-                int tempColor = picture.getRGB(currX, currY);
-                int tempRed = (tempColor >> 16) & 0xFF;
-                int tempGreen = (tempColor >> 8) & 0xFF;
-                int tempBlue = tempColor & 0xFF;
-                energy += Math.pow(red - tempRed, 2) +
-                        Math.pow(green - tempGreen, 2) +
-                        Math.pow(blue - tempBlue, 2);
-            }
-        }
+        int colorLeft = picture.getRGB(x, y - 1);
+        int colorRight = picture.getRGB(x, y + 1);
+        energy += Math.pow(getColor(colorLeft, 0) - getColor(colorRight, 0), 2) +
+                Math.pow(getColor(colorLeft, 1) - getColor(colorRight, 1), 2) +
+                Math.pow(getColor(colorLeft, 2) - getColor(colorRight, 2), 2);
 
         return energy;
+//        return Math.sqrt(energy);
     }
 
     // current picture
@@ -110,7 +115,7 @@ public class SeamCarver {
             }
         }
 
-        seam[0] = pos;
+        seam[0] = picture.width() / 2 < pos ? pos + 1 : pos + 1;
         seam[1] = pos;
 
         for (int j = 2; j < picture.width(); j++) {
@@ -165,6 +170,14 @@ public class SeamCarver {
         return seam;
     }
 
+    private void checkEveryPixelOfSeam(int[] seam) {
+        for (int i = 0; i < seam.length - 1; i++) {
+            if (Math.abs(seam[i] - seam[i+1]) > 1) {
+                throw new IllegalArgumentException();
+            }
+        }
+    }
+
     // remove horizontal seam from current picture
     public void removeHorizontalSeam(int[] seam) {
         if (seam == null || width() <= 1 || seam.length > width()) {
@@ -172,14 +185,6 @@ public class SeamCarver {
         }
 
         checkEveryPixelOfSeam(seam);
-    }
-
-    private void checkEveryPixelOfSeam(int[] seam) {
-        for (int i = 0; i < seam.length - 1; i++) {
-            if (Math.abs(seam[i] - seam[i+1]) > 1) {
-                throw new IllegalArgumentException();
-            }
-        }
     }
 
     // remove vertical seam from current picture
