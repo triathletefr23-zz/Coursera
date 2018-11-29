@@ -1,7 +1,5 @@
 import edu.princeton.cs.algs4.Picture;
 
-import java.awt.*;
-
 public class SeamCarver {
     public final static double BORDER_ENERGY = 1000;
     private Picture picture;
@@ -16,6 +14,18 @@ public class SeamCarver {
         this.picture = new Picture(picture);
         pixelsEnergy = new double[this.picture.width()][this.picture.height()];
         calculatePixelsEnergy();
+    }
+
+    private double[][] transposePixelsEnergy() {
+        double[][] transposed = new double[this.picture().height()][this.picture.width()];
+
+        for (int i = 0; i < this.picture.height(); i++) {
+            for (int j = 0; j < this.picture.width(); j++) {
+                transposed[i][j] = pixelsEnergy[j][i];
+            }
+        }
+
+        return transposed;
     }
 
     private void calculatePixelsEnergy() {

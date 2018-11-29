@@ -2,6 +2,8 @@ import edu.princeton.cs.algs4.Picture;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class SeamCarverShould {
     private SeamCarver seamCarver;
     private Picture examplePicture;
@@ -94,4 +96,20 @@ public class SeamCarverShould {
         var horizontalSeam = seamCarver.findHorizontalSeam();
         Assert.assertEquals(seamCarver.width(), horizontalSeam.length);
     }
+
+//    @Test
+//    public void ReturnTransposedMatrix1() {
+//        var matrix = new double[][]{ new double[]{ 1, 2, 3 }, { 4, 5, 6 } };
+//        var expected = new double[][]{ new double[]{ 1, 4 }, { 2, 5 }, { 3, 6 } };
+//        var transposed = seamCarver.transposePixelsEnergy(matrix, 3, 2);
+//        Assert.assertTrue(Arrays.deepEquals(expected, transposed));
+//    }
+//
+//    @Test
+//    public void ReturnTransposedMatrix2() {
+//        var matrix = new double[][]{ new double[]{ 5, 4, 3 }, { 4, 0, 4 }, { 7, 10, 3 } };
+//        var expected = new double[][]{ new double[]{ 5, 4, 7 }, { 4, 0, 10 }, { 3, 4, 3 } };
+//        var transposed = seamCarver.transposePixelsEnergy(matrix, 3, 3);
+//        Assert.assertTrue(Arrays.deepEquals(expected, transposed));
+//    }
 }
