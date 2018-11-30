@@ -10,6 +10,7 @@ public class SeamCarverShould {
     private final static double DELTA = 0.001;
     private final static String PATH_3x4 = "data\\3x4.png";
     private final static String PATH_6x5 = "data\\6x5.png";
+    private final static String PATH_5x6 = "data\\5x6.png";
     private final static String PATH_EXAMPLE = "data\\example.png";
     private final static String PATH_OCEAN = "data\\HJoceanSmall.png";
 
@@ -81,14 +82,15 @@ public class SeamCarverShould {
 
     @Test
     public void ReturnAThousandIfPixelIsOnTheBorder() {
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(0, 1), DELTA);
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(1, 0), DELTA);
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(1, seamCarver.height() - 1), DELTA);
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(seamCarver.width() - 1, 1), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, Math.sqrt(seamCarver.energy(0, 1)), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, Math.sqrt(seamCarver.energy(1, 0)), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, Math.sqrt(seamCarver.energy(1, seamCarver.height() - 1)), DELTA);
+        Assert.assertEquals(SeamCarver.BORDER_ENERGY, Math.sqrt(seamCarver.energy(seamCarver.width() - 1, 1)), DELTA);
     }
 
     @Test
     public void ReturnEnergyOfNormalPixel() {
+        init(PATH_OCEAN);
         Assert.assertTrue(seamCarver.energy(1, 1) > 0);
     }
 
@@ -113,12 +115,65 @@ public class SeamCarverShould {
     }
 
     @Test
+    public void ReturnVerticalSeamFor5x6Picture() {
+        init(PATH_5x6);
+        var verticalSeam = seamCarver.findVerticalSeam();
+        var expected = new int[] { 1, 2, 2, 3, 2, 1 };
+        Assert.assertTrue(Arrays.equals(expected, verticalSeam));
+    }
+
+    @Test
+    public void ReturnHorizontalSeamFor5x6Picture() {
+        init(PATH_5x6);
+        var horizontalSeam = seamCarver.findHorizontalSeam();
+        var expected = new int[] { 2, 3, 2, 3, 2 };
+        Assert.assertTrue(Arrays.equals(expected, horizontalSeam));
+    }
+
+    @Test
     public void ReturnVerticalSeamFor6x5Picture() {
         init(PATH_6x5);
         var verticalSeam = seamCarver.findVerticalSeam();
         var expected = new int[] { 3, 4, 3, 2, 2 };
         Assert.assertTrue(Arrays.equals(expected, verticalSeam));
     }
+
+    @Test
+    public void ReturnHorizontalSeamFor6x5Picture() {
+        init(PATH_6x5);
+        var horizontalSeam = seamCarver.findHorizontalSeam();
+        var expected = new int[] { 2, 2, 1, 2, 1, 2 };
+        Assert.assertTrue(Arrays.equals(expected, horizontalSeam));
+    }
+
+    @Test
+    public void RemoveVerticalSeamFor3x4Picture() {
+        init(PATH_3x4);
+        var seam = seamCarver.findVerticalSeam();
+        seamCarver.removeVerticalSeam(seam);
+    }
+
+    @Test
+    public void RemoveHorizontalSeamFor3x4Picture() {
+        init(PATH_3x4);
+        var seam = seamCarver.findHorizontalSeam();
+        seamCarver.removeHorizontalSeam(seam);
+    }
+
+    @Test
+    public void RemoveVerticalSeamFor6x5Picture() {
+        init(PATH_3x4);
+        var seam = seamCarver.findVerticalSeam();
+        seamCarver.removeVerticalSeam(seam);
+    }
+
+    @Test
+    public void RemoveHorizontalSeamFor6x5Picture() {
+        init(PATH_3x4);
+        var seam = seamCarver.findHorizontalSeam();
+        seamCarver.removeHorizontalSeam(seam);
+    }
+
 
 //    @Test
 //    public void ReturnTransposedMatrix1() {

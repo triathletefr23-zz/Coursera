@@ -4,6 +4,8 @@ public class SeamCarver {
     public final static double BORDER_ENERGY = 1000;
     private Picture picture;
     private double[][] pixelsEnergy;
+    private int height;
+    private int width;
 
     // create a seam carver object based on the given picture
     public SeamCarver(Picture picture) {
@@ -12,6 +14,8 @@ public class SeamCarver {
         }
 
         this.picture = new Picture(picture);
+        height = this.picture.height();
+        width = this.picture.width();
         pixelsEnergy = new double[this.picture.width()][this.picture.height()];
         calculatePixelsEnergy();
     }
@@ -103,22 +107,22 @@ public class SeamCarver {
 
     // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
-        int[] seam = new int[picture.width()];
+        int[] seam = new int[width];
 
         double min = Double.POSITIVE_INFINITY;
         int pos = 0;
 
-        for (int j = 1; j < picture.height() - 1; j++) {
+        for (int j = 1; j < height - 1; j++) {
             if (min > pixelsEnergy[1][j]) {
                 min = pixelsEnergy[1][j];
                 pos = j;
             }
         }
 
-        seam[0] = picture.width() / 2 < pos ? pos + 1 : pos + 1;
+        seam[0] = getBorderPosition(height, pos);;
         seam[1] = pos;
 
-        for (int j = 2; j < picture.width(); j++) {
+        for (int j = 2; j < width - 1; j++) {
             int currMinPos = pos - 1;
             for (int i = 0; i <= 1; i++) {
                 if (pixelsEnergy[j][pos + i] < pixelsEnergy[j][currMinPos]) {
@@ -129,31 +133,40 @@ public class SeamCarver {
             pos = currMinPos;
         }
 
-        seam[picture.width() - 1] = pos;
+        seam[width - 1] = getBorderPosition(height, pos);
 
         return seam;
     }
 
+    // adjust the first and last border indexes to be near the middle index
+    private int getBorderPosition(int length, int pos) {
+        double mid = (double) length / 2;
+        double diff = mid - pos;
+        if (diff > 1) return pos + 1;
+        if (diff <= -1) return pos - 1;
+        return pos;
+    }
+
     // sequence of indices for vertical seam
     public int[] findVerticalSeam() {
-        int[] seam = new int[picture.height()];
+        int[] seam = new int[height];
 
         double min = Double.POSITIVE_INFINITY;
         int pos = 0;
 
         // we have to found the pixel with min energy in 2nd row
-        for (int i = 1; i < picture.width() - 1; i++) {
+        for (int i = 1; i < width - 1; i++) {
             if (min > pixelsEnergy[i][1]) {
                 min = pixelsEnergy[i][1];
                 pos = i;
             }
         }
         // set the same value in the first row pixel's index with min energy as the second
-        seam[0] = pos;
+        seam[0] = getBorderPosition(width, pos);
         seam[1] = pos;
 
         // find the min energy between the nearest pixels from the pos in the previous row
-        for (int i = 2; i < picture.height() - 1; i++) {
+        for (int i = 2; i < height - 1; i++) {
             int currMinPos = pos - 1;
             for (int j = 0; j <= 1; j++) {
                 if (pixelsEnergy[pos + j][i] < pixelsEnergy[currMinPos][i]) {
@@ -165,7 +178,7 @@ public class SeamCarver {
         }
 
         // set the same index as the previous row pixel's index
-        seam[picture.height() - 1] = pos;
+        seam[height - 1] = getBorderPosition(width, pos);
 
         return seam;
     }
@@ -180,21 +193,34 @@ public class SeamCarver {
 
     // remove horizontal seam from current picture
     public void removeHorizontalSeam(int[] seam) {
-        if (seam == null || width() <= 1 || seam.length > width()) {
+        if (seam == null || width <= 1 || seam.length > width) {
             throw new IllegalArgumentException();
         }
 
         checkEveryPixelOfSeam(seam);
+
+        for (int i = 0; i < width; i++) {
+            if (height - 1 - seam[i] >= 0)
+                System.arraycopy(pixelsEnergy[i], seam[i] + 1, pixelsEnergy[i], seam[i], height - 1 - seam[i]);
+        }
+
+        height--;
     }
 
     // remove vertical seam from current picture
     public void removeVerticalSeam(int[] seam) {
-        if (seam == null || height() <= 1 || seam.length > height()) {
+        if (seam == null || height <= 1 || seam.length > height) {
             throw new IllegalArgumentException();
         }
 
         checkEveryPixelOfSeam(seam);
 
+        for (int i = 0; i < height; i++) {
+            for (int j = seam[i]; j < width - 1; j++) {
+                pixelsEnergy[j][i] = pixelsEnergy[j + 1][i];
+            }
+        }
 
+        width--;
     }
 }
