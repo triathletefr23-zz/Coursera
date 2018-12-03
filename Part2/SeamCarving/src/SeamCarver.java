@@ -2,6 +2,7 @@ import edu.princeton.cs.algs4.Picture;
 
 public class SeamCarver {
     public final static double BORDER_ENERGY = 1000;
+    private final static double SCALE = 100;
     private Picture picture;
     private double[][] pixelsEnergy;
     private int height;
@@ -16,32 +17,43 @@ public class SeamCarver {
         this.picture = new Picture(picture);
         height = this.picture.height();
         width = this.picture.width();
-        pixelsEnergy = new double[this.picture.width()][this.picture.height()];
+        pixelsEnergy = new double[height][width];
         calculatePixelsEnergy();
     }
 
-    private double[][] transposePixelsEnergy() {
-        double[][] transposed = new double[this.picture().height()][this.picture.width()];
+    private void transposePixelsEnergy() {
+        double[][] transposed = new double[width][height];
 
-        for (int i = 0; i < this.picture.height(); i++) {
-            for (int j = 0; j < this.picture.width(); j++) {
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
                 transposed[i][j] = pixelsEnergy[j][i];
             }
         }
 
-        return transposed;
+        pixelsEnergy = transposed;
+    }
+
+    private void switchHeightAndWidth() {
+        int copy = height;
+        height = width;
+        width = copy;
+    }
+
+    private void restorePixelsEnergy(double[][] backupEnergy) {
+        pixelsEnergy = backupEnergy;
     }
 
     private void calculatePixelsEnergy() {
-        for (int i = 0; i < picture.width(); i++) {
-            for (int j = 0; j < picture.height(); j++) {
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
                 pixelsEnergy[i][j] = calculateEnergyForPixel(i, j);
             }
         }
     }
 
+    // row col
     private boolean isBorderPixel(int x, int y) {
-        return x == 0 || x == picture.width() - 1 || y == 0 || y == picture.height() - 1;
+        return x == 0 || x == height - 1 || y == 0 || y == width - 1;
     }
 
     private int getColor(int color, int colorNumber) {
@@ -53,28 +65,27 @@ public class SeamCarver {
         }
     }
 
-    private double calculateEnergyForPixel(int x, int y) {
-        if (isBorderPixel(x, y)) {
-            return Math.pow(BORDER_ENERGY, 2);
-//            return BORDER_ENERGY;
+    // row col
+    private double calculateEnergyForPixel(int row, int col) {
+        if (isBorderPixel(row, col)) {
+            return BORDER_ENERGY;
         }
 
-        int colorUp = picture.getRGB(x - 1, y);
-        int colorDown = picture.getRGB(x + 1, y);
+        int colorUp = picture.getRGB(col, row - 1);
+        int colorDown = picture.getRGB(col, row + 1);
 
         double energy = 0.0;
         energy += Math.pow(getColor(colorUp, 0) - getColor(colorDown, 0), 2) +
                 Math.pow(getColor(colorUp, 1) - getColor(colorDown, 1), 2) +
                 Math.pow(getColor(colorUp, 2) - getColor(colorDown, 2), 2);
 
-        int colorLeft = picture.getRGB(x, y - 1);
-        int colorRight = picture.getRGB(x, y + 1);
+        int colorLeft = picture.getRGB(col - 1, row);
+        int colorRight = picture.getRGB(col + 1, row);
         energy += Math.pow(getColor(colorLeft, 0) - getColor(colorRight, 0), 2) +
                 Math.pow(getColor(colorLeft, 1) - getColor(colorRight, 1), 2) +
                 Math.pow(getColor(colorLeft, 2) - getColor(colorRight, 2), 2);
 
-        return energy;
-//        return Math.sqrt(energy);
+        return Math.round(Math.sqrt(energy) * SCALE) / SCALE;
     }
 
     // current picture
@@ -93,7 +104,7 @@ public class SeamCarver {
     }
 
     private boolean isNonValidIndexes(int col, int row) {
-        return col < 0 || col > picture.width() - 1 || row < 0 || row > picture.height() - 1;
+        return col < 0 || col > width - 1 || row < 0 || row > height - 1;
     }
 
     // energy of pixel at column x and row y
@@ -102,83 +113,92 @@ public class SeamCarver {
             throw new IllegalArgumentException();
         }
 
-        return pixelsEnergy[x][y];
+        return pixelsEnergy[y][x];
     }
 
-    // sequence of indices for horizontal seam
-    public int[] findHorizontalSeam() {
-        int[] seam = new int[width];
+    private boolean checkIfLineHasSameValues(int rowNumber) {
+        double value = pixelsEnergy[rowNumber][0];
+
+        for (double elem: pixelsEnergy[rowNumber]) {
+            if (value != elem) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    // topological order algorithm
+    public int[] findVerticalSeam() {
+        int[] seam = new int[height];
+        double[][] distTo = new double[height][width];
+        int[][] from = new int[height][width];
 
         double min = Double.POSITIVE_INFINITY;
-        int pos = 0;
+        for (int i = 1; i < height - 1; i++) {
+            for (int j = 0; j < width; j++) {
+                if (i == 1) {
+                    distTo[i][j] = pixelsEnergy[i][j];
+                    from[i][j] = j;
+                }
 
-        for (int j = 1; j < height - 1; j++) {
-            if (min > pixelsEnergy[1][j]) {
-                min = pixelsEnergy[1][j];
-                pos = j;
-            }
-        }
+                if (i == height - 2) {
+                    distTo[i + 1][j] = distTo[i][j];
+                    from[i + 1][j] = from[i][j];
+                }
 
-        seam[0] = getBorderPosition(height, pos);;
-        seam[1] = pos;
+                // relax edges from current pixel
+                for (int step = -1; step <= 1; step++) {
+                    if (isNonValidIndexes(j + step, i)) {
+                        continue;
+                    }
 
-        for (int j = 2; j < width - 1; j++) {
-            int currMinPos = pos - 1;
-            for (int i = 0; i <= 1; i++) {
-                if (pixelsEnergy[j][pos + i] < pixelsEnergy[j][currMinPos]) {
-                    currMinPos = pos + i;
+                    int currAboveIndex = j + step;
+
+                    double currValue = distTo[i][j] + pixelsEnergy[i + 1][currAboveIndex];
+                    if (distTo[i + 1][currAboveIndex] == 0 || currValue < distTo[i + 1][currAboveIndex]) {
+                        distTo[i + 1][currAboveIndex] = currValue;
+                        from[i + 1][currAboveIndex] = j;
+                    }
                 }
             }
-            seam[j] = currMinPos;
-            pos = currMinPos;
         }
 
-        seam[width - 1] = getBorderPosition(height, pos);
+        // find min value in last row
+        int minIndex = 0;
+        for (int i = 0; i < width; i++) {
+            if (distTo[height - 1][i] < min) {
+                min = distTo[height - 1][i];
+                minIndex = i;
+            }
+        }
+
+        // construct shortest path
+        for (int i = height - 2; i >= 1; i--) {
+            seam[i] = minIndex;
+            minIndex = from[i][minIndex];
+        }
+        seam[0] = seam[1];
+        seam[height - 1] = seam[height - 2];
 
         return seam;
     }
 
-    // adjust the first and last border indexes to be near the middle index
-    private int getBorderPosition(int length, int pos) {
-        double mid = (double) length / 2;
-        double diff = mid - pos;
-        if (diff > 1) return pos + 1;
-        if (diff <= -1) return pos - 1;
-        return pos;
-    }
+    // sequence of indices for horizontal seam
+    public int[] findHorizontalSeam() {
+        double[][] backEnergy = pixelsEnergy;
 
-    // sequence of indices for vertical seam
-    public int[] findVerticalSeam() {
-        int[] seam = new int[height];
+        transposePixelsEnergy();
 
-        double min = Double.POSITIVE_INFINITY;
-        int pos = 0;
+        // height <-> width
+        switchHeightAndWidth();
 
-        // we have to found the pixel with min energy in 2nd row
-        for (int i = 1; i < width - 1; i++) {
-            if (min > pixelsEnergy[i][1]) {
-                min = pixelsEnergy[i][1];
-                pos = i;
-            }
-        }
-        // set the same value in the first row pixel's index with min energy as the second
-        seam[0] = getBorderPosition(width, pos);
-        seam[1] = pos;
+        int[] seam = findVerticalSeam();
 
-        // find the min energy between the nearest pixels from the pos in the previous row
-        for (int i = 2; i < height - 1; i++) {
-            int currMinPos = pos - 1;
-            for (int j = 0; j <= 1; j++) {
-                if (pixelsEnergy[pos + j][i] < pixelsEnergy[currMinPos][i]) {
-                    currMinPos = pos + j;
-                }
-            }
-            seam[i] = currMinPos;
-            pos = currMinPos;
-        }
+        restorePixelsEnergy(backEnergy);
 
-        // set the same index as the previous row pixel's index
-        seam[height - 1] = getBorderPosition(width, pos);
+        // width <-> height
+        switchHeightAndWidth();
 
         return seam;
     }
