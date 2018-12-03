@@ -171,4 +171,18 @@ public class SeamCarverShould {
         var expected = new int[] { 2, 3, 2, 3, 2 };
         Assert.assertTrue(checkIfArrayHasPercentageOfSameElements(expected, horizontalSeam));
     }
+
+    @Test
+    public void CallRemoveVerticalSeam() {
+        init(PATH_5x6);
+        var verticalSeam = seamCarver.findVerticalSeam();
+        seamCarver.removeVerticalSeam(verticalSeam);
+    }
+
+    @Test
+    public void CallRemoveHorizontalSeam() {
+        init(PATH_5x6);
+        var horizontalSeam = seamCarver.findHorizontalSeam();
+        seamCarver.removeHorizontalSeam(horizontalSeam);
+    }
 }

@@ -39,15 +39,23 @@ public class SeamCarver {
         width = copy;
     }
 
-    private void restorePixelsEnergy(double[][] backupEnergy) {
-        pixelsEnergy = backupEnergy;
-    }
-
     private void calculatePixelsEnergy() {
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 pixelsEnergy[i][j] = calculateEnergyForPixel(i, j);
             }
+        }
+    }
+
+    private void recalculateEnergyAfterRemovalOfVerticalSeam(int[] seam) {
+        for (int i = 0; i < seam.length; i++) {
+            pixelsEnergy[i][seam[i]] = calculateEnergyForPixel(i, seam[i]);
+        }
+    }
+
+    private void recalculateEnergyAfterRemovalOfHorizontalSeam(int[] seam) {
+        for (int i = 0; i < seam.length; i++) {
+            pixelsEnergy[seam[i]][i] = calculateEnergyForPixel(seam[i], i);
         }
     }
 
@@ -186,7 +194,7 @@ public class SeamCarver {
 
     // sequence of indices for horizontal seam
     public int[] findHorizontalSeam() {
-        double[][] backEnergy = pixelsEnergy;
+        double[][] backupEnergy = pixelsEnergy;
 
         transposePixelsEnergy();
 
@@ -195,7 +203,7 @@ public class SeamCarver {
 
         int[] seam = findVerticalSeam();
 
-        restorePixelsEnergy(backEnergy);
+        pixelsEnergy = backupEnergy;
 
         // width <-> height
         switchHeightAndWidth();
@@ -219,12 +227,22 @@ public class SeamCarver {
 
         checkEveryPixelOfSeam(seam);
 
+        Picture newPicture = new Picture(this.picture.width(), this.picture.height() - 1);
         for (int i = 0; i < width; i++) {
-            if (height - 1 - seam[i] >= 0)
-                System.arraycopy(pixelsEnergy[i], seam[i] + 1, pixelsEnergy[i], seam[i], height - 1 - seam[i]);
+            for (int j = 0; j < height - 1; j++) {
+                if (j < seam[i]) {
+                    newPicture.setRGB(i, j, this.picture.getRGB(i, j));
+                    continue;
+                }
+                int nextRightPixelColor = this.picture.getRGB(i, j + 1);
+                newPicture.setRGB(i, j, nextRightPixelColor);
+                pixelsEnergy[j][i] = pixelsEnergy[j + 1][i];
+            }
         }
 
         height--;
+        this.picture = new Picture(newPicture);
+        recalculateEnergyAfterRemovalOfHorizontalSeam(seam);
     }
 
     // remove vertical seam from current picture
@@ -235,12 +253,21 @@ public class SeamCarver {
 
         checkEveryPixelOfSeam(seam);
 
+        Picture newPicture = new Picture(this.picture.width() - 1, this.picture.height());
         for (int i = 0; i < height; i++) {
-            for (int j = seam[i]; j < width - 1; j++) {
-                pixelsEnergy[j][i] = pixelsEnergy[j + 1][i];
+            for (int j = 0; j < width - 1; j++) {
+                if (j < seam[i]) {
+                    newPicture.setRGB(j, i, this.picture.getRGB(j, i));
+                    continue;
+                }
+                int nextRightPixelColor = this.picture.getRGB(j + 1, i);
+                newPicture.setRGB(j, i, nextRightPixelColor);
+                pixelsEnergy[i][j] = pixelsEnergy[i][j + 1];
             }
         }
-
         width--;
+
+        this.picture = new Picture(newPicture);
+        recalculateEnergyAfterRemovalOfVerticalSeam(seam);
     }
 }
