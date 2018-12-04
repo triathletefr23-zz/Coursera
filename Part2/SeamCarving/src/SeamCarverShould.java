@@ -6,9 +6,12 @@ public class SeamCarverShould {
     private SeamCarver seamCarver;
     private Picture examplePicture;
     private final static double DELTA = 0.001;
+    private final static double BORDER_ENERGY = 1000;
     private final static String PATH_3x4 = "data\\3x4.png";
     private final static String PATH_6x5 = "data\\6x5.png";
     private final static String PATH_5x6 = "data\\5x6.png";
+    private final static String PATH_12x10 = "data\\12x10.png";
+    private final static String PATH_8x1 = "data\\8x1.png";
     private final static String PATH_EXAMPLE = "data\\example.png";
     private final static String PATH_OCEAN = "data\\HJoceanSmall.png";
 
@@ -91,10 +94,11 @@ public class SeamCarverShould {
 
     @Test
     public void ReturnAThousandIfPixelIsOnTheBorder() {
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(0, 1), DELTA);
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(1, 0), DELTA);
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(1, seamCarver.height() - 1), DELTA);
-        Assert.assertEquals(SeamCarver.BORDER_ENERGY, seamCarver.energy(seamCarver.width() - 1, 1), DELTA);
+
+        Assert.assertEquals(BORDER_ENERGY, seamCarver.energy(0, 1), DELTA);
+        Assert.assertEquals(BORDER_ENERGY, seamCarver.energy(1, 0), DELTA);
+        Assert.assertEquals(BORDER_ENERGY, seamCarver.energy(1, seamCarver.height() - 1), DELTA);
+        Assert.assertEquals(BORDER_ENERGY, seamCarver.energy(seamCarver.width() - 1, 1), DELTA);
     }
 
     @Test
@@ -184,5 +188,46 @@ public class SeamCarverShould {
         init(PATH_5x6);
         var horizontalSeam = seamCarver.findHorizontalSeam();
         seamCarver.removeHorizontalSeam(horizontalSeam);
+    }
+
+    @Test
+    public void ReturnEnergyForPixel11inPicture6x5() {
+        init(PATH_6x5);
+        var value = seamCarver.energy(1, 1);
+        Assert.assertEquals(237.34784599823104, value, 0.001);
+    }
+
+    @Test
+    public void ReturnEnergyForPixel11inPicture12x10() {
+        init(PATH_12x10);
+        var value = seamCarver.energy(1, 1);
+        Assert.assertEquals(218.0252278980577, value, 0.001);
+    }
+
+    @Test
+    public void CallFindVerticalSeamInPicture8x1() {
+        init(PATH_8x1);
+        var seam = seamCarver.findVerticalSeam();
+    }
+
+    @Test
+    public void CallRemoveVerticalSeamFor8x1Picture() {
+        init(PATH_8x1);
+        var seam = seamCarver.findVerticalSeam();
+        seamCarver.removeVerticalSeam(seam);
+    }
+
+    @Test
+    public void CallRemoveVerticalSeamFor12x10Picture() {
+        init(PATH_12x10);
+        var seam = seamCarver.findVerticalSeam();
+        seamCarver.removeVerticalSeam(seam);
+    }
+
+    @Test
+    public void CallRemoveVerticalSeamFor5x6Picture() {
+        init(PATH_5x6);
+        var seam = seamCarver.findHorizontalSeam();
+        seamCarver.removeHorizontalSeam(seam);
     }
 }

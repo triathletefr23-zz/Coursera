@@ -1,8 +1,7 @@
 import edu.princeton.cs.algs4.Picture;
 
 public class SeamCarver {
-    public final static double BORDER_ENERGY = 1000;
-    private final static double SCALE = 100;
+    private static final double BORDER_ENERGY = 1000;
     private Picture picture;
     private double[][] pixelsEnergy;
     private int height;
@@ -49,13 +48,17 @@ public class SeamCarver {
 
     private void recalculateEnergyAfterRemovalOfVerticalSeam(int[] seam) {
         for (int i = 0; i < seam.length; i++) {
-            pixelsEnergy[i][seam[i]] = calculateEnergyForPixel(i, seam[i]);
+            if (seam[i] < width && i < height) {
+                pixelsEnergy[i][seam[i]] = calculateEnergyForPixel(i, seam[i]);
+            }
         }
     }
 
     private void recalculateEnergyAfterRemovalOfHorizontalSeam(int[] seam) {
         for (int i = 0; i < seam.length; i++) {
-            pixelsEnergy[seam[i]][i] = calculateEnergyForPixel(seam[i], i);
+            if (seam[i] < height && i < width) {
+                pixelsEnergy[seam[i]][i] = calculateEnergyForPixel(seam[i], i);
+            }
         }
     }
 
@@ -82,8 +85,7 @@ public class SeamCarver {
         int colorUp = picture.getRGB(col, row - 1);
         int colorDown = picture.getRGB(col, row + 1);
 
-        double energy = 0.0;
-        energy += Math.pow(getColor(colorUp, 0) - getColor(colorDown, 0), 2) +
+        double energy = Math.pow(getColor(colorUp, 0) - getColor(colorDown, 0), 2) +
                 Math.pow(getColor(colorUp, 1) - getColor(colorDown, 1), 2) +
                 Math.pow(getColor(colorUp, 2) - getColor(colorDown, 2), 2);
 
@@ -93,7 +95,7 @@ public class SeamCarver {
                 Math.pow(getColor(colorLeft, 1) - getColor(colorRight, 1), 2) +
                 Math.pow(getColor(colorLeft, 2) - getColor(colorRight, 2), 2);
 
-        return Math.round(Math.sqrt(energy) * SCALE) / SCALE;
+        return Math.sqrt(energy);
     }
 
     // current picture
@@ -122,18 +124,6 @@ public class SeamCarver {
         }
 
         return pixelsEnergy[y][x];
-    }
-
-    private boolean checkIfLineHasSameValues(int rowNumber) {
-        double value = pixelsEnergy[rowNumber][0];
-
-        for (double elem: pixelsEnergy[rowNumber]) {
-            if (value != elem) {
-                return false;
-            }
-        }
-
-        return true;
     }
 
     // topological order algorithm
@@ -186,8 +176,11 @@ public class SeamCarver {
             seam[i] = minIndex;
             minIndex = from[i][minIndex];
         }
-        seam[0] = seam[1];
-        seam[height - 1] = seam[height - 2];
+
+        if (height > 1) {
+            seam[0] = seam[1];
+            seam[height - 1] = seam[height - 2];
+        }
 
         return seam;
     }
@@ -221,7 +214,7 @@ public class SeamCarver {
 
     // remove horizontal seam from current picture
     public void removeHorizontalSeam(int[] seam) {
-        if (seam == null || width <= 1 || seam.length > width) {
+        if (seam == null || width < 1 || seam.length > width) {
             throw new IllegalArgumentException();
         }
 
@@ -247,7 +240,7 @@ public class SeamCarver {
 
     // remove vertical seam from current picture
     public void removeVerticalSeam(int[] seam) {
-        if (seam == null || height <= 1 || seam.length > height) {
+        if (seam == null || height < 1 || seam.length > height) {
             throw new IllegalArgumentException();
         }
 
