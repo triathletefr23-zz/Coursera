@@ -1,4 +1,5 @@
-import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.*;
+
 import java.util.HashMap;
 
 public class BaseballElimination {
@@ -16,6 +17,8 @@ public class BaseballElimination {
         }
     }
 
+    private final int sNumber;
+    private final int tNumber;
     private final int[][] results;
     private HashMap<String, TeamResult> teams;
 
@@ -27,6 +30,8 @@ public class BaseballElimination {
 
         In in = new In(filename);
         int number = Integer.parseInt(in.readLine());
+        sNumber = number;
+        tNumber = number + 1;
         teams = new HashMap<>();
         results = new int[number][number];
 
@@ -96,6 +101,56 @@ public class BaseballElimination {
         return results[firstTeamIndex][secondTeamIndex];
     }
 
+    private FlowNetwork CreateFlowNetworkForTheTeam(String team) {
+        TeamResult teamResult = teams.get(team);
+        int winAndremSum = teamResult.wins + teamResult.left;
+
+        int index = teams.size();
+        int sum = 0;
+        while (index > 0) {
+            sum+=index--;
+        }
+
+        // 2 = s + t
+        int vertices = 2 + sum + teams.size();
+
+        // from s to every game + every game has 2 result edges = 3
+        int edges = sum * 3 + teams.size();
+
+        FlowNetwork network = new FlowNetwork(vertices, edges);
+
+        // exclude the team from the loops
+        for (int i = 0; i < teams.size(); i++) {
+            for (int j = i + 1; j < teams.size(); j++) {
+                // get current team index to get win count
+                // ????
+                int currentTeamWin = 0;
+
+                int gamesNumber = i * 10 + j;
+                // from s to remaining games
+                FlowEdge edge = new FlowEdge(sNumber, gamesNumber, results[i][j]);
+                network.addEdge(edge);
+
+                // from remaining game to first team
+                edge = new FlowEdge(gamesNumber, i, Double.POSITIVE_INFINITY);
+                network.addEdge(edge);
+
+                // from remaining game to second team
+                edge = new FlowEdge(gamesNumber, j, Double.POSITIVE_INFINITY);
+                network.addEdge(edge);
+
+                // from every team to t
+                edge = new FlowEdge(i, tNumber, winAndremSum - currentTeamWin);
+            }
+        }
+
+
+    }
+
+    private void RunFordFulkerson() {
+
+    }
+
     // is given team eliminated?
     public boolean isEliminated(String team) {
         if (team == null || !teams.containsKey(team)) {
@@ -112,5 +167,21 @@ public class BaseballElimination {
         }
 
         return teams.keySet();
+    }
+
+    public static void main(String[] args) {
+        BaseballElimination division = new BaseballElimination(args[0]);
+        for (String team : division.teams()) {
+            if (division.isEliminated(team)) {
+                StdOut.print(team + " is eliminated by the subset R = { ");
+                for (String t : division.certificateOfElimination(team)) {
+                    StdOut.print(t + " ");
+                }
+                StdOut.println("}");
+            }
+            else {
+                StdOut.println(team + " is not eliminated");
+            }
+        }
     }
 }
