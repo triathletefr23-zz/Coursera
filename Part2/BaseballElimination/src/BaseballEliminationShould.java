@@ -3,13 +3,16 @@ import org.junit.Test;
 import java.util.HashSet;
 
 public class BaseballEliminationShould {
-    private final static String team4FileName = "data\\teams4.txt";
+    private final static String FOUR_TEAMS_FILENAME = "data\\teams4.txt";
+    private final static String DETROIT = "Detroit";
+    private final static String MONTREAL = "Montreal";
+    private final static String ATLANTA = "Atlanta";
     private final String testTeamName;
     private final String secondTeamName;
     private BaseballElimination elimination;
 
     public BaseballEliminationShould() {
-        elimination = new BaseballElimination(team4FileName);
+        elimination = new BaseballElimination(FOUR_TEAMS_FILENAME);
         var iterator = elimination.teams().iterator();
         testTeamName = iterator.next();
         secondTeamName = iterator.next();
@@ -88,5 +91,32 @@ public class BaseballEliminationShould {
     @Test
     public void ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam() {
         Assert.assertEquals(6, elimination.against(testTeamName, secondTeamName));
+    }
+
+//    @Test
+//    public void ReturnTeamForTrivialEliminationOfMontreal() {
+//        Assert.assertNotNull(elimination.isEliminatedByTrivialReason(MONTREAL));
+//    }
+//
+//    @Test
+//    public void ReturnNullForTrivialEliminationOfMontreal() {
+//        Assert.assertNull(elimination.isEliminatedByTrivialReason(ATLANTA));
+//    }
+
+    @Test
+    public void ConstructFlowNetworkFor4Teams() {
+        var network = elimination.CreateFlowNetworkForTheTeam(ATLANTA);
+        var sum = computeSum(elimination.numberOfTeams());
+        var expected = 3 * sum + elimination.numberOfTeams();
+        Assert.assertEquals(expected, network.E());
+    }
+
+    private int computeSum(int n) {
+        var i = n - 1;
+        var sum = 0;
+        while (i > 0) {
+            sum+=i--;
+        }
+        return sum;
     }
 }

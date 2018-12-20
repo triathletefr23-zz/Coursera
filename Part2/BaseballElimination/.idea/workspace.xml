@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6aceb1ae-fd0a-48c4-9920-14fca43ed0f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BaseballElimination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseballElimination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseballEliminationShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseballEliminationShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,37 +27,38 @@
     <session id="-1942256208">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="6" />
+          <entry key="class" value="9" />
           <entry key="iml" value="5" />
-          <entry key="java" value="15" />
+          <entry key="java" value="16" />
           <entry key="name" value="1" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="4" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="6" />
+          <entry key="CLASS" value="9" />
           <entry key="IDEA_MODULE" value="5" />
-          <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JAVA" value="16" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4814" />
+          <entry key="java" value="6466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4814" />
+          <entry key="JAVA" value="6466" />
         </counts>
       </usages-collector>
     </session>
@@ -63,39 +66,31 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/BaseballEliminationShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-112">
-                  <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+                <state relative-caret-position="220">
+                  <caret line="109" column="61" lean-forward="true" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="61" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#741#742#0" expanded="true" />
-                    <element signature="e#767#768#0" expanded="true" />
-                    <element signature="e#995#996#0" expanded="true" />
-                    <element signature="e#1033#1034#0" expanded="true" />
-                    <element signature="e#895#896#0" expanded="true" />
-                    <element signature="e#933#934#0" expanded="true" />
-                    <element signature="e#1045#1046#0" expanded="true" />
-                    <element signature="e#1083#1084#0" expanded="true" />
-                    <element signature="e#1303#1304#0" expanded="true" />
-                    <element signature="e#1358#1359#0" expanded="true" />
-                    <element signature="e#1359#1360#0" expanded="true" />
-                    <element signature="e#1400#1401#0" expanded="true" />
-                    <element signature="e#1383#1384#0" expanded="true" />
-                    <element signature="e#1495#1496#0" expanded="true" />
-                    <element signature="e#1533#1534#0" expanded="true" />
+                    <element signature="e#719#720#0" expanded="true" />
+                    <element signature="e#757#758#0" expanded="true" />
+                    <element signature="e#867#868#0" expanded="true" />
+                    <element signature="e#910#911#0" expanded="true" />
+                    <element signature="e#1023#1024#0" expanded="true" />
+                    <element signature="e#1063#1064#0" expanded="true" />
+                    <element signature="e#1176#1177#0" expanded="true" />
+                    <element signature="e#1219#1220#0" expanded="true" />
+                    <element signature="e#1332#1333#0" expanded="true" />
+                    <element signature="e#1387#1388#0" expanded="true" />
+                    <element signature="e#1500#1501#0" expanded="true" />
+                    <element signature="e#1555#1556#0" expanded="true" />
+                    <element signature="e#1668#1669#0" expanded="true" />
+                    <element signature="e#1706#1707#0" expanded="true" />
+                    <element signature="e#1819#1820#0" expanded="true" />
+                    <element signature="e#1857#1858#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/teams4.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21">
-                  <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -103,8 +98,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/FordFulkerson.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="104">
-                  <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+                <state relative-caret-position="680">
+                  <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -112,17 +107,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/FlowEdge.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="45" column="49" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="49" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/FlowNetwork.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="489">
-                  <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+                <state relative-caret-position="777">
+                  <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
@@ -130,18 +116,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/BaseballElimination.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="386">
-                  <caret line="121" column="42" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
+                <state relative-caret-position="193">
+                  <caret line="129" column="53" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#602#603#0" expanded="true" />
-                    <element signature="e#629#630#0" expanded="true" />
-                    <element signature="e#1675#1676#0" expanded="true" />
-                    <element signature="e#1712#1713#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -162,10 +144,18 @@
     <findStrings>
       <find>iter</find>
       <find>Team</find>
+      <find>team1.index</find>
+      <find>gamesNumber</find>
+      <find>4_TEAMS_FILENAME</find>
+      <find>edgeCount</find>
     </findStrings>
     <replaceStrings>
       <replace>iterator</replace>
       <replace>TeamResult</replace>
+      <replace>gameIndex</replace>
+      <replace>4TEAMS_FILENAME</replace>
+      <replace>FOUR_TEAMS_FILENAME</replace>
+      <replace>verticesCount</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -194,7 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,11 +205,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545206928548" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545292936177" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -238,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BaseballEliminationShould">
+  <component name="RunManager" selected="JUnit.BaseballEliminationShould.ConstructFlowNetworkFor4Teams">
     <configuration name="BaseballEliminationShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BaseballElimination" />
       <option name="PACKAGE_NAME" value="" />
@@ -247,41 +237,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseballEliminationShould.ReadAndReturnRightDataFromFileTeam4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor4Teams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BaseballElimination" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BaseballEliminationShould" />
-      <option name="METHOD_NAME" value="ReadAndReturnRightDataFromFileTeam4" />
+      <option name="METHOD_NAME" value="ConstructFlowNetworkFor4Teams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor5Teams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BaseballElimination" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BaseballEliminationShould" />
-      <option name="METHOD_NAME" value="ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" />
+      <option name="METHOD_NAME" value="ConstructFlowNetworkFor5Teams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesForCurrentFirstTestTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationShould.ReturnNullForTrivialEliminationOfMontreal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BaseballElimination" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BaseballEliminationShould" />
-      <option name="METHOD_NAME" value="ReturnANumberOfRemainingGamesForCurrentFirstTestTeam" />
+      <option name="METHOD_NAME" value="ReturnNullForTrivialEliminationOfMontreal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseballEliminationShould.ReturnANumberOfWinsForCurrentFirstTestTeam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseballEliminationShould.ReturnTrueForTrivialEliminationOfMontreal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BaseballElimination" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BaseballEliminationShould" />
-      <option name="METHOD_NAME" value="ReturnANumberOfWinsForCurrentFirstTestTeam" />
+      <option name="METHOD_NAME" value="ReturnTrueForTrivialEliminationOfMontreal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -289,18 +279,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BaseballEliminationShould" />
-      <item itemvalue="JUnit.BaseballEliminationShould.ReturnANumberOfWinsForCurrentFirstTestTeam" />
-      <item itemvalue="JUnit.BaseballEliminationShould.ReturnANumberOfRemainingGamesForCurrentFirstTestTeam" />
-      <item itemvalue="JUnit.BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" />
-      <item itemvalue="JUnit.BaseballEliminationShould.ReadAndReturnRightDataFromFileTeam4" />
+      <item itemvalue="JUnit.BaseballEliminationShould.ConstructFlowNetworkFor5Teams" />
+      <item itemvalue="JUnit.BaseballEliminationShould.ReturnTrueForTrivialEliminationOfMontreal" />
+      <item itemvalue="JUnit.BaseballEliminationShould.ReturnNullForTrivialEliminationOfMontreal" />
+      <item itemvalue="JUnit.BaseballEliminationShould.ConstructFlowNetworkFor4Teams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BaseballEliminationShould.ConstructFlowNetworkFor4Teams" />
+        <item itemvalue="JUnit.BaseballEliminationShould.ReturnNullForTrivialEliminationOfMontreal" />
+        <item itemvalue="JUnit.BaseballEliminationShould.ReturnTrueForTrivialEliminationOfMontreal" />
+        <item itemvalue="JUnit.BaseballEliminationShould.ConstructFlowNetworkFor5Teams" />
         <item itemvalue="JUnit.BaseballEliminationShould" />
-        <item itemvalue="JUnit.BaseballEliminationShould.ReadAndReturnRightDataFromFileTeam4" />
-        <item itemvalue="JUnit.BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" />
-        <item itemvalue="JUnit.BaseballEliminationShould.ReturnANumberOfRemainingGamesForCurrentFirstTestTeam" />
-        <item itemvalue="JUnit.BaseballEliminationShould.ReturnANumberOfWinsForCurrentFirstTestTeam" />
       </list>
     </recent_temporary>
   </component>
@@ -318,35 +308,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BaseballEliminationShould_ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam - 2018.12.18 at 22h 48m 48s.xml">
-      <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor5Teams - 2018.12.20 at 07h 21m 59s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor5Teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould_ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam - 2018.12.18 at 22h 49m 18s.xml">
-      <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor5Teams - 2018.12.20 at 07h 22m 51s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor5Teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould_ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam - 2018.12.18 at 22h 59m 27s.xml">
-      <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor5Teams - 2018.12.20 at 07h 24m 37s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor5Teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould_ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam - 2018.12.18 at 22h 59m 53s.xml">
-      <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor5Teams - 2018.12.20 at 07h 24m 52s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor5Teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould_ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam - 2018.12.18 at 23h 02m 49s.xml">
-      <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor5Teams - 2018.12.20 at 07h 28m 14s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor5Teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould_ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam - 2018.12.18 at 23h 03m 23s.xml">
-      <configuration name="BaseballEliminationShould.ReturnANumberOfRemainingGamesBetweenTestTeamAndSecondTestTeam" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ReturnTrueForTrivialEliminationOfMontreal - 2018.12.20 at 07h 38m 44s.xml">
+      <configuration name="BaseballEliminationShould.ReturnTrueForTrivialEliminationOfMontreal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould - 2018.12.18 at 23h 03m 33s.xml">
-      <configuration name="BaseballEliminationShould" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ReturnTrueForTrivialEliminationOfMontreal - 2018.12.20 at 08h 41m 43s.xml">
+      <configuration name="BaseballEliminationShould.ReturnTrueForTrivialEliminationOfMontreal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould_ReadAndReturnRightDataFromFileTeam4 - 2018.12.18 at 23h 12m 02s.xml">
-      <configuration name="BaseballEliminationShould.ReadAndReturnRightDataFromFileTeam4" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ReturnNullForTrivialEliminationOfMontreal - 2018.12.20 at 08h 43m 37s.xml">
+      <configuration name="BaseballEliminationShould.ReturnNullForTrivialEliminationOfMontreal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould - 2018.12.18 at 23h 12m 07s.xml">
-      <configuration name="BaseballEliminationShould" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor4Teams - 2018.12.20 at 08h 44m 18s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor4Teams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BaseballEliminationShould - 2018.12.18 at 23h 12m 14s.xml">
-      <configuration name="BaseballEliminationShould" configurationId="JUnit" />
+    <history-entry file="BaseballEliminationShould_ConstructFlowNetworkFor4Teams - 2018.12.20 at 09h 01m 03s.xml">
+      <configuration name="BaseballEliminationShould.ConstructFlowNetworkFor4Teams" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -360,10 +350,9 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32994923" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32994923" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3573604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -371,6 +360,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -381,7 +371,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,15 +379,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32994923" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3573604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.32994923" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,6 +412,11 @@
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="results" language="JAVA" />
+        <watch expression="index1" />
+        <watch expression="index2" />
+        <watch expression="gameIndex" />
+        <watch expression="winAndRemSum" />
+        <watch expression="currentTeamWin" />
       </configuration>
     </watches-manager>
   </component>
@@ -483,39 +479,10 @@
     <entry file="file://$PROJECT_DIR$/../WordNet/src/WordNet.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/teams4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-          <folding>
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#4518#4653#0" expanded="true" />
-            <element signature="e#4652#4653#0" expanded="true" />
-            <element signature="e#4888#5036#0" expanded="true" />
-            <element signature="e#5035#5036#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,62 +493,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaseballEliminationShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/FordFulkerson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="680">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/FlowEdge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="49" />
+        <state relative-caret-position="777">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/FlowNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="735">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/teams4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="8" selection-start-line="4" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaseballEliminationShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="109" column="61" lean-forward="true" selection-start-line="109" selection-start-column="61" selection-end-line="109" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaseballElimination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="121" column="42" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
+        <state relative-caret-position="193">
+          <caret line="129" column="53" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
           </folding>
         </state>
       </provider>
