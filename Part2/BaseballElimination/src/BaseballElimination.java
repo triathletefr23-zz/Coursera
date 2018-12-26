@@ -1,13 +1,28 @@
-import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algs4.FlowEdge;
+import edu.princeton.cs.algs4.FlowNetwork;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.FordFulkerson;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class BaseballElimination {
+    private final int[][] results;
+    private final HashMap<String, TeamResult> teams;
+    private int sNumber;
+    private int tNumber;
+    private HashMap<Integer, String[]> games;
+    private int size;
+
     private final class TeamResult {
-        private int wins;
-        private int losses;
-        private int left;
-        private int index;
+        private final int wins;
+        private final int losses;
+        private final int left;
+        private final int index;
 
         private TeamResult(int wins, int losses, int left, int index) {
             this.wins = wins;
@@ -16,12 +31,6 @@ public class BaseballElimination {
             this.index = index;
         }
     }
-
-    private final int[][] results;
-    private int sNumber;
-    private int tNumber;
-    private HashMap<String, TeamResult> teams;
-    private HashMap<Integer, String[]> games;
 
     // create a baseball division from given filename in format specified below
     public BaseballElimination(String filename) {
@@ -33,11 +42,14 @@ public class BaseballElimination {
         int number = Integer.parseInt(in.readLine());
         teams = new HashMap<>();
         results = new int[number][number];
+        HashSet<Integer> vertices = new HashSet<>();
 
         int iterator = 0;
         while (in.hasNextLine()) {
             int index = 0;
-            String[] infos = in.readLine().trim().split("\\s+");
+            String line = in.readLine();
+            if (line == null) continue;
+            String[] infos = line.trim().split("\\s+");
             teams.put(infos[index++],
                     new TeamResult(
                     Integer.parseInt(infos[index++]),
@@ -47,9 +59,15 @@ public class BaseballElimination {
 
             for (int i = 0; i < number; i++) {
                 results[iterator][i] = Integer.parseInt(infos[index++]);
+                if (results[iterator][i] != 0) {
+                    vertices.add(iterator);
+                    vertices.add(i);
+                }
             }
             iterator++;
         }
+
+        size = vertices.size();
     }
 
     // number of teams
@@ -109,7 +127,7 @@ public class BaseballElimination {
         String result = isEliminatedByTrivialReason(team);
         if (teams.containsKey(result)) return true;
 
-        ArrayList<Integer> vertices = RunFordFulkerson(team);
+        ArrayList<Integer> vertices = runFordFulkerson(team);
 
         return vertices.size() > 1;
     }
@@ -123,7 +141,7 @@ public class BaseballElimination {
         String result = isEliminatedByTrivialReason(team);
         if (teams.containsKey(result)) return Collections.singletonList(result);
 
-        ArrayList<Integer> vertices = RunFordFulkerson(team);
+        ArrayList<Integer> vertices = runFordFulkerson(team);
 
         if (vertices.size() <= 1) return null;
 
@@ -148,7 +166,7 @@ public class BaseballElimination {
 
     private Iterable<String> constructCertificateSet(ArrayList<Integer> vertices) {
         HashSet<String> certificate = new HashSet<>();
-        for (Integer elem: vertices) {
+        for (int elem: vertices) {
             if (games.containsKey(elem)) {
                 certificate.add(games.get(elem)[0]);
                 certificate.add(games.get(elem)[1]);
@@ -157,20 +175,20 @@ public class BaseballElimination {
         return certificate;
     }
 
-    private FlowNetwork CreateFlowNetworkForTheTeam(String team) {
+    private FlowNetwork createFlowNetworkForTheTeam(String team) {
         // remove current team info
         TeamResult teamResult = teams.remove(team);
 
         int winAndRemSum = teamResult.wins + teamResult.left;
 
-        int index = teams.size() - 1;
+        int index = size - 1;
         int sum = 0;
         while (index > 0) {
-            sum+=index--;
+            sum += index--;
         }
 
         // 2 = s + t
-        int verticesCount = 2 + sum + teams.size();
+        int verticesCount = 2 + sum + size;
         sNumber = 0;
         tNumber = verticesCount - 1;
 
@@ -180,33 +198,37 @@ public class BaseballElimination {
 
         int verticesIndex = 1;
         FlowEdge edge;
-        for (Map.Entry<String, TeamResult> key1: teams.entrySet()) {
+        for (Map.Entry<String, TeamResult> key1 : teams.entrySet()) {
             String teamName1 = key1.getKey();
             TeamResult team1 = key1.getValue();
             int index1 = team1.index;
-            for (Map.Entry<String, TeamResult> key2: teams.entrySet()) {
+            for (Map.Entry<String, TeamResult> key2 : teams.entrySet()) {
                 String teamName2 = key2.getKey();
                 TeamResult team2 = key2.getValue();
                 int index2 = team2.index;
 
-                if (index1 >= index2) continue;
+                if (index1 >= index2 || results[index1][index2] == 0) continue;
 
                 // from s to remaining games
                 edge = new FlowEdge(sNumber, verticesIndex, results[index1][index2]);
                 network.addEdge(edge);
-                games.put(verticesIndex, new String[] { teamName1, teamName2 });
 
                 // from remaining game to first team
                 edge = new FlowEdge(verticesIndex, index1 + sum + 1, Double.POSITIVE_INFINITY);
                 network.addEdge(edge);
 
                 // from remaining game to second team
-                edge = new FlowEdge(verticesIndex++, index2 + sum + 1, Double.POSITIVE_INFINITY);
+                edge = new FlowEdge(verticesIndex, index2 + sum + 1, Double.POSITIVE_INFINITY);
                 network.addEdge(edge);
+
+                games.put(verticesIndex++, new String[]{ teamName1, teamName2 });
             }
 
-            edge = new FlowEdge(1 + sum + index1, tNumber, winAndRemSum - team1.wins);
-            network.addEdge(edge);
+            int capacity = winAndRemSum - team1.wins;
+            if (capacity != 0) {
+                edge = new FlowEdge(1 + sum + index1, tNumber, capacity);
+                network.addEdge(edge);
+            }
         }
 
         // put again current team info
@@ -215,8 +237,8 @@ public class BaseballElimination {
         return network;
     }
 
-    private ArrayList<Integer> RunFordFulkerson(String team) {
-        FlowNetwork network = CreateFlowNetworkForTheTeam(team);
+    private ArrayList<Integer> runFordFulkerson(String team) {
+        FlowNetwork network = createFlowNetworkForTheTeam(team);
         FordFulkerson algorithm = new FordFulkerson(network, sNumber, tNumber);
         ArrayList<Integer> minCutVertices = new ArrayList<>();
         for (int i = 0; i < network.V(); i++) {

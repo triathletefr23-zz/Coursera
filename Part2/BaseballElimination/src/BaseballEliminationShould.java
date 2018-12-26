@@ -6,8 +6,10 @@ import java.util.HashSet;
 
 public class BaseballEliminationShould {
     private final static String FOUR_TEAMS_FILENAME = "data\\teams4.txt";
+    private final static String FOUR_A_TEAMS_FILENAME = "data\\teams4a.txt";
     private final static String FIVE_TEAMS_FILENAME = "data\\teams5.txt";
     private final static String SEVEN_TEAMS_FILENAME = "data\\teams7.txt";
+    private final static String EIGHT_TEAMS_FILENAME = "data\\teams8.txt";
     private final static String TWENTY_FOUR_TEAMS_FILENAME = "data\\teams24.txt";
     private final static String DETROIT = "Detroit";
     private final static String MONTREAL = "Montreal";
@@ -209,6 +211,20 @@ public class BaseballEliminationShould {
     public void ReturnTrueForEliminatedTeam13For24Teams() {
         elimination = new BaseballElimination(TWENTY_FOUR_TEAMS_FILENAME);
         var result = elimination.isEliminated("Team13");
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void ReturnTrueForEliminatedGhaddafiFor4aTeams() {
+        elimination = new BaseballElimination(FOUR_A_TEAMS_FILENAME);
+        var result = elimination.isEliminated("Ghaddafi");
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void ReturnTrueForEliminatedHarvardFor8Teams() {
+        elimination = new BaseballElimination(EIGHT_TEAMS_FILENAME);
+        var result = elimination.isEliminated("Harvard");
         Assert.assertTrue(result);
     }
 
