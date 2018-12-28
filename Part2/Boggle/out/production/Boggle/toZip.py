@@ -6,7 +6,7 @@ def zipdir(path, ziph):
     # ziph is zipfile handle    
     for root, dirs, files in os.walk(path):
         for file in files:
-                names = ["BoggleSolver.java"]
+                names = ["BoggleSolver.java", "AllPaths.java", "Helper.java"]
                 if (file in names):
                         ziph.write(os.path.join(root, file))
 

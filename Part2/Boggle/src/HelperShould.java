@@ -12,19 +12,19 @@ public class HelperShould {
 
     @Test
     public void Return8AdjacentPointsForCentralPoint() {
-        var count = Iterables.size(helper.findAdjacentPoints(SIZE + 1, SIZE));
+        var count = Iterables.size(helper.findAdjacentPoints(SIZE + 1));
         Assert.assertEquals(8, count);
     }
 
     @Test
     public void Return3AdjacentPointsForCornerPoint() {
-        var count = Iterables.size(helper.findAdjacentPoints(0, SIZE));
+        var count = Iterables.size(helper.findAdjacentPoints(0));
         Assert.assertEquals(3, count);
     }
 
     @Test
     public void Return5AdjacentPointsForBorderPoint() {
-        var count = Iterables.size(helper.findAdjacentPoints(1, SIZE));
+        var count = Iterables.size(helper.findAdjacentPoints(1));
         Assert.assertEquals(5, count);
     }
 }

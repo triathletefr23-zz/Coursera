@@ -1,6 +1,8 @@
 import edu.princeton.cs.algs4.TrieSET;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Stack;
 
 public class AllPaths {
     private final int rows;
@@ -47,7 +49,7 @@ public class AllPaths {
 
         // consider all neighbors that would continue path with repeating a node
         else {
-            Iterable<Integer> adj = helper.findAdjacentPoints(v, cols);
+            Iterable<Integer> adj = helper.findAdjacentPoints(v);
             for (int i: adj) {
                 if (onPath[i]) continue;
                 dfs(board, i, t);
@@ -69,7 +71,7 @@ public class AllPaths {
 
             // consider all neighbors that would continue path with repeating a node
             else {
-                Iterable<Integer> adj = helper.findAdjacentPoints(v, cols);
+                Iterable<Integer> adj = helper.findAdjacentPoints(v);
                 for (int i : adj) {
                     if (onPath[i]) continue;
                     optimizedDfs(board, i, t);
@@ -88,8 +90,11 @@ public class AllPaths {
             stringBuilder.append(letter == 'Q' ? "QU" : letter);
         }
         String prefix = stringBuilder.toString();
+        if (dict.contains(prefix) && prefix.length() > 2) {
+            wordsFromDictionary.add(prefix);
+            return false;
+        }
         Iterable<String> words = dict.keysWithPrefix(prefix);
-        if (dict.contains(prefix)) wordsFromDictionary.add(prefix);
         return helper.getSizeOfIterable(words) == 0;
     }
 

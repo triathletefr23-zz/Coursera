@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a309a60a-e066-4897-95ac-89e22afa4af2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/guava_27_0_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AllPathShould.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AllPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelperShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Boggle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Boggle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AllPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AllPaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoggleSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoggleSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoggleSolverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoggleSolverShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HelperShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelperShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,90 +30,58 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="44" />
+          <entry key="JAVA" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11712" />
+          <entry key="JAVA" value="11757" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41694462">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/AllPathShould.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="46" column="87" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="87" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#main#0;class#BoggleSolver#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/AllPaths.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="591">
-                  <caret line="91" column="67" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#3873#3874#0" expanded="true" />
-                    <element signature="e#3906#3907#0" expanded="true" />
-                    <element signature="e#3980#3981#0" expanded="true" />
-                    <element signature="e#4022#4023#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Helper.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="30" column="11" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="686">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AllPaths.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4078#4079#0" expanded="true" />
+                <element signature="e#4120#4121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -151,12 +114,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BoggleBoard.java" />
-        <option value="$PROJECT_DIR$/src/HelperShould.java" />
         <option value="$PROJECT_DIR$/src/BoggleSolverShould.java" />
         <option value="$PROJECT_DIR$/src/AllPathShould.java" />
-        <option value="$PROJECT_DIR$/src/AllPaths.java" />
-        <option value="$PROJECT_DIR$/src/Helper.java" />
         <option value="$PROJECT_DIR$/src/BoggleSolver.java" />
+        <option value="$PROJECT_DIR$/src/Helper.java" />
+        <option value="$PROJECT_DIR$/src/HelperShould.java" />
+        <option value="$PROJECT_DIR$/src/AllPaths.java" />
       </list>
     </option>
   </component>
@@ -207,7 +170,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546031337195" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546032664363" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../guava-27.0.1-jre.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -225,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoggleSolverShould">
+  <component name="RunManager" selected="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4">
     <configuration name="AllPathShould.ReturnAllWordsForCurrentPointWithQu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boggle" />
       <option name="PACKAGE_NAME" value="" />
@@ -283,10 +246,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" />
         <item itemvalue="JUnit.BoggleSolverShould" />
         <item itemvalue="JUnit.AllPathShould.ReturnAllWordsForCurrentPointWithQu" />
         <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" />
-        <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" />
         <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_NOON" />
       </list>
     </recent_temporary>
@@ -305,50 +268,49 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4_Qu - 2018.12.28 at 21h 42m 11s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllPathShould_ReturnAllWordsForCurrentPointWithQu - 2018.12.28 at 21h 44m 08s.xml">
-      <configuration name="AllPathShould.ReturnAllWordsForCurrentPointWithQu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4_Qu - 2018.12.28 at 21h 47m 49s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllPathShould_ReturnAllWordsForCurrentPointWithQu - 2018.12.28 at 21h 49m 04s.xml">
-      <configuration name="AllPathShould.ReturnAllWordsForCurrentPointWithQu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4_Qu - 2018.12.28 at 21h 49m 15s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4_Qu - 2018.12.28 at 21h 59m 45s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4_Qu - 2018.12.28 at 22h 04m 30s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4_Qu - 2018.12.28 at 22h 05m 26s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllPathShould_ReturnAllWordsForCurrentPointWithQu - 2018.12.28 at 22h 05m 37s.xml">
-      <configuration name="AllPathShould.ReturnAllWordsForCurrentPointWithQu" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 05m 53s.xml">
       <configuration name="BoggleSolverShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 14m 01s.xml">
+      <configuration name="BoggleSolverShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 16m 37s.xml">
+      <configuration name="BoggleSolverShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 20m 28s.xml">
+      <configuration name="BoggleSolverShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 28m 37s.xml">
+      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 29m 00s.xml">
+      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 29m 13s.xml">
+      <configuration name="BoggleSolverShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 29m 34s.xml">
+      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 29m 53s.xml">
+      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 31m 03s.xml">
+      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49543148" weight="0.13006397" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49441624" weight="0.13006397" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" id="Run" order="7" sideWeight="0.49441624" visible="true" weight="0.20095949" />
-      <window_info id="Debug" order="8" sideWeight="0.50558376" side_tool="true" visible="true" weight="0.20095949" />
+      <window_info id="Run" order="7" sideWeight="0.49340102" visible="true" weight="0.20095949" />
+      <window_info active="true" id="Debug" order="8" sideWeight="0.506599" side_tool="true" visible="true" weight="0.20095949" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -407,19 +369,7 @@
           <url>file://$PROJECT_DIR$/src/BoggleSolverShould.java</url>
           <line>85</line>
           <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AllPaths.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/AllPaths.java</url>
-          <line>89</line>
-          <properties />
-          <option name="timeStamp" value="67" />
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -493,18 +443,6 @@
     <entry file="file://$PROJECT_DIR$/Boggle.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelperShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#87#88#0" expanded="true" />
-            <element signature="e#123#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/TrieSET.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2810">
@@ -553,20 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllPaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="91" column="67" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3873#3874#0" expanded="true" />
-            <element signature="e#3906#3907#0" expanded="true" />
-            <element signature="e#3980#3981#0" expanded="true" />
-            <element signature="e#4022#4023#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AllPathShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -577,30 +501,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
+    <entry file="file://$PROJECT_DIR$/src/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        <state relative-caret-position="231">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelperShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Helper.java">
+    <entry file="file://$PROJECT_DIR$/src/AllPaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="11" />
+        <state relative-caret-position="564">
+          <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4078#4079#0" expanded="true" />
+            <element signature="e#4120#4121#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="557">
+          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#BoggleSolver#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

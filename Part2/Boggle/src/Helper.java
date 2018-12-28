@@ -9,7 +9,7 @@ public final class Helper {
         this.rows = rows;
     }
 
-    public Iterable<Integer> findAdjacentPoints(int i, int cols) {
+    public Iterable<Integer> findAdjacentPoints(int i) {
         Stack<Integer> adjList = new Stack<>();
         int[] delta = new int[]{ -1, 0, 1 };
         int iX = i / cols;
