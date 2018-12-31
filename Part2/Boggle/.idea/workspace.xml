@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a309a60a-e066-4897-95ac-89e22afa4af2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TrieSET.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AllPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Boggle/toZip.py" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Boggle/toZip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AllPathShould.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AllPaths.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoggleSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoggleSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoggleSolverShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoggleSolverShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HelperShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelperShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toZip.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/toZip.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,58 +37,102 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="48" />
+          <entry key="JAVA" value="60" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11757" />
+          <entry key="JAVA" value="14380" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AllPaths.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4078#4079#0" expanded="true" />
-                <element signature="e#4120#4121#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/HelperShould.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="483">
+                  <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="615">
+                  <caret line="88" selection-start-line="88" selection-end-line="88" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1843#1844#0" expanded="true" />
+                    <element signature="e#1916#1917#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/TrieST.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="219">
+                  <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/TrieSET.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Helper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                  <folding>
+                    <element signature="e#770#771#0" expanded="true" />
+                    <element signature="e#833#834#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -99,12 +150,18 @@
       <find>processCurrentPath</find>
       <find>helper</find>
       <find>checkIfAdjacent</find>
+      <find>wordsDictionary</find>
+      <find>dict</find>
+      <find>ALGS4_DICT_PATH</find>
+      <find>algs4_dict</find>
     </findStrings>
     <replaceStrings>
       <replace>index</replace>
       <replace>checkDistance</replace>
       <replace>addPathToAllStrings</replace>
       <replace>HELPER</replace>
+      <replace>dictionary</replace>
+      <replace>ALGS4_DICTIONARY</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -114,20 +171,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/BoggleBoard.java" />
-        <option value="$PROJECT_DIR$/src/BoggleSolverShould.java" />
-        <option value="$PROJECT_DIR$/src/AllPathShould.java" />
-        <option value="$PROJECT_DIR$/src/BoggleSolver.java" />
-        <option value="$PROJECT_DIR$/src/Helper.java" />
-        <option value="$PROJECT_DIR$/src/HelperShould.java" />
+        <option value="$PROJECT_DIR$/src/TrieSet.java" />
         <option value="$PROJECT_DIR$/src/AllPaths.java" />
+        <option value="$PROJECT_DIR$/src/AllPathShould.java" />
+        <option value="$PROJECT_DIR$/src/HelperShould.java" />
+        <option value="$PROJECT_DIR$/src/BoggleSolver.java" />
+        <option value="$PROJECT_DIR$/src/BoggleSolverShould.java" />
+        <option value="$PROJECT_DIR$/src/Helper.java" />
+        <option value="$PROJECT_DIR$/src/TrieSET.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-8" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -170,8 +229,8 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546032664363" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../guava-27.0.1-jre.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546207354756" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/github/AlgorithmsPartII-Princeton" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21264368" />
@@ -188,13 +247,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4">
-    <configuration name="AllPathShould.ReturnAllWordsForCurrentPointWithQu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in Boggle">
+    <configuration name="All in Boggle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boggle" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllPathShould" />
-      <option name="METHOD_NAME" value="ReturnAllWordsForCurrentPointWithQu" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,50 +264,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoggleSolverShould.Return29WordsForBoard4x4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boggle" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BoggleSolverShould" />
-      <option name="METHOD_NAME" value="GetAllPossibleWordsForBOARD4x4" />
+      <option name="METHOD_NAME" value="Return29WordsForBoard4x4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_NOON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoggleSolverShould.TimingTestYAWLDictionary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boggle" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BoggleSolverShould" />
-      <option name="METHOD_NAME" value="GetAllPossibleWordsForBOARD4x4_NOON" />
+      <option name="METHOD_NAME" value="TimingTestYAWLDictionary" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoggleSolverShould.TimingTestZingDictionary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Boggle" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BoggleSolverShould" />
-      <option name="METHOD_NAME" value="GetAllPossibleWordsForBOARD4x4_Qu" />
+      <option name="METHOD_NAME" value="TimingTestZingDictionary" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" />
-      <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_NOON" />
-      <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" />
-      <item itemvalue="JUnit.AllPathShould.ReturnAllWordsForCurrentPointWithQu" />
+      <item itemvalue="JUnit.BoggleSolverShould.TimingTestYAWLDictionary" />
+      <item itemvalue="JUnit.BoggleSolverShould.Return29WordsForBoard4x4" />
       <item itemvalue="JUnit.BoggleSolverShould" />
+      <item itemvalue="JUnit.All in Boggle" />
+      <item itemvalue="JUnit.BoggleSolverShould.TimingTestZingDictionary" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" />
+        <item itemvalue="JUnit.All in Boggle" />
         <item itemvalue="JUnit.BoggleSolverShould" />
-        <item itemvalue="JUnit.AllPathShould.ReturnAllWordsForCurrentPointWithQu" />
-        <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_Qu" />
-        <item itemvalue="JUnit.BoggleSolverShould.GetAllPossibleWordsForBOARD4x4_NOON" />
+        <item itemvalue="JUnit.BoggleSolverShould.TimingTestZingDictionary" />
+        <item itemvalue="JUnit.BoggleSolverShould.TimingTestYAWLDictionary" />
+        <item itemvalue="JUnit.BoggleSolverShould.Return29WordsForBoard4x4" />
       </list>
     </recent_temporary>
   </component>
@@ -268,49 +325,79 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 05m 53s.xml">
+    <history-entry file="BoggleSolverShould_Return29WordsForBoard4x4 - 2018.12.30 at 17h 52m 43s.xml">
+      <configuration name="BoggleSolverShould.Return29WordsForBoard4x4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_Return29WordsForBoard4x4 - 2018.12.30 at 17h 53m 16s.xml">
+      <configuration name="BoggleSolverShould.Return29WordsForBoard4x4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Boggle - 2018.12.30 at 17h 54m 47s.xml">
+      <configuration name="All in Boggle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_TimingTestYAWLDictionary - 2018.12.30 at 17h 55m 06s.xml">
+      <configuration name="BoggleSolverShould.TimingTestYAWLDictionary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_TimingTestYAWLDictionary - 2018.12.30 at 17h 55m 36s.xml">
+      <configuration name="BoggleSolverShould.TimingTestYAWLDictionary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould - 2018.12.30 at 17h 55m 49s.xml">
       <configuration name="BoggleSolverShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 14m 01s.xml">
+    <history-entry file="BoggleSolverShould_TimingTestZingDictionary - 2018.12.30 at 17h 56m 07s.xml">
+      <configuration name="BoggleSolverShould.TimingTestZingDictionary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould_TimingTestZingDictionary - 2018.12.30 at 17h 56m 20s.xml">
+      <configuration name="BoggleSolverShould.TimingTestZingDictionary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoggleSolverShould - 2018.12.30 at 17h 56m 29s.xml">
       <configuration name="BoggleSolverShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 16m 37s.xml">
-      <configuration name="BoggleSolverShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 20m 28s.xml">
-      <configuration name="BoggleSolverShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 28m 37s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 29m 00s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould - 2018.12.28 at 22h 29m 13s.xml">
-      <configuration name="BoggleSolverShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 29m 34s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 29m 53s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoggleSolverShould_GetAllPossibleWordsForBOARD4x4 - 2018.12.28 at 22h 31m 03s.xml">
-      <configuration name="BoggleSolverShould.GetAllPossibleWordsForBOARD4x4" configurationId="JUnit" />
+    <history-entry file="All_in_Boggle - 2018.12.30 at 18h 24m 40s.xml">
+      <configuration name="All in Boggle" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49441624" weight="0.13006397" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4781726" weight="0.13006397" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info id="Run" order="7" sideWeight="0.49340102" visible="true" weight="0.20095949" />
-      <window_info active="true" id="Debug" order="8" sideWeight="0.506599" side_tool="true" visible="true" weight="0.20095949" />
+      <window_info active="true" id="Run" order="7" sideWeight="0.4778646" visible="true" weight="0.25302014" />
+      <window_info id="Debug" order="8" sideWeight="0.52213544" side_tool="true" visible="true" weight="0.25302014" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32994923" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32994923" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.48426396" weight="0.13006397" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info id="Run" order="7" sideWeight="0.48629442" weight="0.20095949" />
+      <window_info id="Debug" order="8" sideWeight="0.51573604" side_tool="true" visible="true" weight="0.13006397" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -320,7 +407,6 @@
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -329,34 +415,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.13113007" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32994923" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -366,10 +425,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BoggleSolverShould.java</url>
-          <line>85</line>
+          <url>file://$PROJECT_DIR$/src/HelperShould.java</url>
+          <line>13</line>
           <properties />
-          <option name="timeStamp" value="72" />
+          <option name="timeStamp" value="124" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -395,13 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3591">
           <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/TrieST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -442,13 +494,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Boggle.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/TrieSET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2810">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../junit-4.10.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -491,49 +536,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllPathShould.java">
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/TrieSET.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="46" column="87" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="87" />
+        <state relative-caret-position="273">
+          <caret line="13" column="31" selection-end-line="310" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Helper.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="320">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelperShould.java">
+    <entry file="file://$PROJECT_DIR$/src/AllPathShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="303">
+          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AllPaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="92" column="59" lean-forward="true" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+        <state relative-caret-position="657">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="43" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4078#4079#0" expanded="true" />
-            <element signature="e#4120#4121#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
+    <entry file="file://$PROJECT_DIR$/data/dictionary-zingarelli2005.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelperShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="483">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -542,9 +590,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BoggleSolverShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="615">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/TrieST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoggleSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TrieSET.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

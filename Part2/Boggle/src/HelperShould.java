@@ -4,27 +4,26 @@ import org.junit.Test;
 
 public class HelperShould {
     private final Helper helper;
-    private final static int SIZE = 4;
 
     public HelperShould() {
-        helper = new Helper(4, 5);
+        helper = new Helper(4, 4);
     }
 
     @Test
     public void Return8AdjacentPointsForCentralPoint() {
-        var count = Iterables.size(helper.findAdjacentPoints(SIZE + 1));
+        var count = Iterables.size(helper.findAdjacentPoints(1,1));
         Assert.assertEquals(8, count);
     }
 
     @Test
     public void Return3AdjacentPointsForCornerPoint() {
-        var count = Iterables.size(helper.findAdjacentPoints(0));
+        var count = Iterables.size(helper.findAdjacentPoints(0, 0));
         Assert.assertEquals(3, count);
     }
 
     @Test
     public void Return5AdjacentPointsForBorderPoint() {
-        var count = Iterables.size(helper.findAdjacentPoints(1));
+        var count = Iterables.size(helper.findAdjacentPoints(0, 1));
         Assert.assertEquals(5, count);
     }
 }

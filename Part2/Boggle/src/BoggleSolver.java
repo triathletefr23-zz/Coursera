@@ -1,12 +1,12 @@
-import edu.princeton.cs.algs4.TrieSET;
-
 import java.util.HashMap;
-import java.util.TreeSet;
+import java.util.HashSet;
 
 public class BoggleSolver
 {
     private final HashMap<Integer, Integer> pointsDictionary;
-    private final TrieSET wordsDictionary;
+    private final String[] array;
+    private TrieSET dictionary;
+    private Helper helper;
 
     // Initializes the data structure using the given array of strings as the dictionary.
     // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
@@ -15,13 +15,9 @@ public class BoggleSolver
             throw new IllegalArgumentException();
         }
 
-        pointsDictionary = new HashMap<>();
+        array = dictionary.clone();
+        this.pointsDictionary = new HashMap<>();
         createPointsDictionary();
-
-        wordsDictionary = new TrieSET();
-        for (String word: dictionary) {
-            wordsDictionary.add(word);
-        }
     }
 
     private void createPointsDictionary() {
@@ -41,20 +37,50 @@ public class BoggleSolver
             throw new IllegalArgumentException();
         }
 
-        int cols = board.cols();
-        int rows = board.rows();
+        this.dictionary = new TrieSET();
+        for (String word: this.array) {
+            this.dictionary.add(word);
+        }
 
-        TreeSet<String> set = new TreeSet<>();
-        for (int i = 0; i < rows * cols; i++) {
-            for (int j = 0; j < rows * cols; j++) {
-                AllPaths modifiedDFS = new AllPaths(board, i, j, wordsDictionary);
-                for (String string: modifiedDFS.getPossibleStringsWithPrefixOptimisation()) {
-                    set.add(string);
-                }
+        int rows = board.rows();
+        int cols = board.cols();
+        helper = new Helper(rows, cols);
+
+        HashSet<String> validWords = new HashSet<>();
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                boolean[][] marked = new boolean[rows][cols];
+                collectWords(board, i, j, marked, "", validWords);
             }
         }
 
-        return set;
+        return validWords;
+    }
+
+    private void collectWords(BoggleBoard board, int i, int j, boolean[][] marked, String prefix, HashSet<String> validWords) {
+        if (marked[i][j]) {
+            return;
+        }
+
+        char letter = board.getLetter(i, j);
+        String word = prefix + (letter == 'Q' ? "QU" : letter);
+
+        if (!dictionary.hasPrefix(word)) {
+            return;
+        }
+
+        if (word.length() > 2 && dictionary.contains(word)) {
+            validWords.add(word);
+        }
+
+        marked[i][j] = true;
+
+        Iterable<int[]> adj = helper.findAdjacentPoints(i, j);
+        for (int[] pair : adj) {
+            collectWords(board, pair[0], pair[1], marked, word, validWords);
+        }
+
+        marked[i][j] = false;
     }
 
     // Returns the score of the given word if it is in the dictionary, zero otherwise.
