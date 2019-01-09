@@ -3,7 +3,10 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Stack;
 
 public class MoveToFront {
     // apply move-to-front encoding, reading from standard input and writing to standard output
@@ -84,7 +87,7 @@ public class MoveToFront {
             alphabet[i] = (char) i;
         }
 
-        ArrayDeque<Character> deque = new ArrayDeque<>();
+        Deque<Character> deque = new ArrayDeque<>();
         for (int num : encoded) {
             char c = alphabet[num];
             deque.push(c);
