@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="947769f6-1b77-462c-9c99-2a8bfe6d1a3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveToFront.java" afterDir="false" />
-    </list>
+    <list default="true" id="947769f6-1b77-462c-9c99-2a8bfe6d1a3d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -376,7 +370,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547065410302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547065449047" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Part1/8Puzzle" />
     <property name="project.structure.last.edited" value="Project" />
@@ -543,7 +537,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15778251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
