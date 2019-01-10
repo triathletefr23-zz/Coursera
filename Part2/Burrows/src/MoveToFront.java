@@ -107,10 +107,11 @@ public class MoveToFront {
             System.setIn(new FileInputStream(args[1]));
 
         if      (args[0].equals("-")) encode();
-        else if (args[0].equals("+")) {
-            Iterable<Integer> encoded = codeString(BinaryStdIn.readString());
-            decode(encoded);
-        }
+        else if (args[0].equals("+")) decode();
+//        {
+//            Iterable<Integer> encoded = codeString(BinaryStdIn.readString());
+//            decode(encoded);
+//        }
         else throw new IllegalArgumentException("Illegal command line argument");
     }
 }

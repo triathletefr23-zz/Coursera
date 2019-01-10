@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="947769f6-1b77-462c-9c99-2a8bfe6d1a3d" name="Default Changelist" comment="" />
+    <list default="true" id="947769f6-1b77-462c-9c99-2a8bfe6d1a3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BurrowsWheeler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BurrowsWheelerShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SuffixesGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveToFront.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +44,14 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="53" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7419" />
+          <entry key="JAVA" value="8720" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -53,37 +62,46 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/MoveToFrontShould.java">
+            <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="22">
-                  <caret line="1" selection-start-line="1" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/CircularSuffixArrayShould.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="588">
-                  <caret line="30" column="45" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#437#438#0" expanded="true" />
-                    <element signature="e#497#498#0" expanded="true" />
-                    <element signature="e#799#800#0" expanded="true" />
-                    <element signature="e#872#873#0" expanded="true" />
-                    <element signature="e#934#935#0" expanded="true" />
-                    <element signature="e#971#972#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="42">
+                  <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/System.java">
+            <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="744">
-                  <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
+                <state relative-caret-position="-687">
+                  <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -93,40 +111,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
+            <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="33" selection-start-column="33" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Deque.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="896">
-                  <caret line="351" column="6" selection-start-line="351" selection-start-column="6" selection-end-line="351" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$PROJECT_DIR$/../../stdlib.jar!/In.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="9526">
-                  <caret line="460" column="16" selection-start-line="460" selection-start-column="16" selection-end-line="460" selection-end-column="16" />
+                <state relative-caret-position="42">
+                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
                 </state>
               </provider>
             </entry>
@@ -162,16 +150,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MoveToFrontShould.java" />
-        <option value="$PROJECT_DIR$/src/MoveToFront.java" />
         <option value="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" />
+        <option value="$PROJECT_DIR$/src/BurrowsWheelerShould.java" />
+        <option value="$PROJECT_DIR$/src/MoveToFront.java" />
         <option value="$PROJECT_DIR$/src/CircularSuffixArray.java" />
+        <option value="$PROJECT_DIR$/src/SuffixesGenerator.java" />
+        <option value="$PROJECT_DIR$/src/BurrowsWheeler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="-8" />
+    <option name="y" value="-1088" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -370,7 +362,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547065449047" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547158965430" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Part1/8Puzzle" />
     <property name="project.structure.last.edited" value="Project" />
@@ -390,7 +382,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray">
+  <component name="RunManager" selected="Application.BurrowsWheeler_Transform_abra">
+    <configuration name="BurrowsWheeler_Transform_abra" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
+      <module name="Burrows" />
+      <option name="PROGRAM_PARAMETERS" value="- data\\abra.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MoveToFront_Decode_abra" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="MoveToFront" />
       <module name="Burrows" />
@@ -415,14 +415,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoveToFront_Encode_abra" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="MoveToFront" />
-      <module name="Burrows" />
-      <option name="PROGRAM_PARAMETERS" value="- data\\abra.txt" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CircularSuffixArrayShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Burrows" />
       <option name="PACKAGE_NAME" value="" />
@@ -441,6 +433,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Burrows" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CircularSuffixArrayShould" />
+      <option name="METHOD_NAME" value="ReturnIndexOfRAInSortedArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircularSuffixArrayShould.ReturnLengthOfAbra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Burrows" />
       <option name="PACKAGE_NAME" value="" />
@@ -451,33 +453,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularSuffixArrayShould.ThrowAnIllegalArgumentExceptionIfInitialStringIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Burrows" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CircularSuffixArrayShould" />
-      <option name="METHOD_NAME" value="ThrowAnIllegalArgumentExceptionIfInitialStringIsNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.MoveToFront_Decode_abra" />
       <item itemvalue="Application.MoveToFront_Decode_alphanum" />
       <item itemvalue="Application.MoveToFront_Decode_couscous" />
-      <item itemvalue="Application.MoveToFront_Encode_abra" />
+      <item itemvalue="Application.BurrowsWheeler_Transform_abra" />
       <item itemvalue="JUnit.CircularSuffixArrayShould" />
-      <item itemvalue="JUnit.CircularSuffixArrayShould.ThrowAnIllegalArgumentExceptionIfInitialStringIsNull" />
       <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnLengthOfAbra" />
       <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" />
+      <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BurrowsWheeler_Transform_abra" />
+        <item itemvalue="JUnit.CircularSuffixArrayShould" />
+        <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" />
         <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" />
         <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnLengthOfAbra" />
-        <item itemvalue="JUnit.CircularSuffixArrayShould" />
-        <item itemvalue="JUnit.CircularSuffixArrayShould.ThrowAnIllegalArgumentExceptionIfInitialStringIsNull" />
-        <item itemvalue="Application.MoveToFront_Encode_abra" />
       </list>
     </recent_temporary>
   </component>
@@ -495,15 +487,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 20h 49m 18s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 20h 50m 54s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 20h 52m 43s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 20h 53m 18s.xml">
       <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
     </history-entry>
@@ -525,6 +508,15 @@
     <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 21h 13m 27s.xml">
       <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfRAInSortedArray - 2019.01.09 at 21h 30m 13s.xml">
+      <configuration name="CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfRAInSortedArray - 2019.01.09 at 21h 30m 58s.xml">
+      <configuration name="CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CircularSuffixArrayShould - 2019.01.09 at 21h 31m 01s.xml">
+      <configuration name="CircularSuffixArrayShould" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,6 +529,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15778251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -569,14 +562,14 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15778251" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" id="Run" order="7" visible="true" weight="0.20682302" />
+      <window_info id="Run" order="7" weight="0.20682302" />
       <window_info id="Debug" order="8" weight="0.23880596" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -624,12 +617,6 @@
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CircularSuffixArray.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -661,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/HexDump.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/BinaryStdIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
@@ -693,13 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
           <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoveToFrontShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -731,29 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CircularSuffixArrayShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Deque.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
@@ -763,18 +713,78 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
+        <state relative-caret-position="858">
+          <caret line="506" column="43" lean-forward="true" selection-start-line="506" selection-start-column="43" selection-end-line="506" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoveToFrontShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CircularSuffixArrayShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-687">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/HexDump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

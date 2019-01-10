@@ -1,5 +1,8 @@
-import java.util.Arrays;
-import java.util.HashMap;
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.StdOut;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Map;
 
 public class CircularSuffixArray {
@@ -10,30 +13,16 @@ public class CircularSuffixArray {
     public CircularSuffixArray(String s) {
         if (s == null) throw new IllegalArgumentException();
 
-        originalSuffixes = new HashMap<>();
-        sortedSuffixes = new String[s.length()];
-
-        originalSuffixes.put(s, 0);
-        sortedSuffixes[0] = s;
-
-        for (int i = 1; i < s.length(); i++) {
-            char[] prev = sortedSuffixes[i - 1].toCharArray();
-            char[] curr = new char[s.length()];
-            System.arraycopy(prev, 1, curr, 0, s.length() - 1);
-            curr[s.length() - 1] = prev[0];
-            String newString = new String(curr);
-            originalSuffixes.put(newString, i);
-            sortedSuffixes[i] = newString;
-        }
-
-        Arrays.sort(sortedSuffixes);
+        SuffixesGenerator generator = new SuffixesGenerator(s);
+        originalSuffixes = generator.getOriginalSuffixes();
+        sortedSuffixes = generator.getSortedSuffixes();
     }
 
-    private void printSuffixes(Iterable values) {
-        for (var el : values) {
-            StdOut.println(el);
-        }
-    }
+//    private void printSuffixes(Iterable values) {
+//        for (var el : values) {
+//            StdOut.println(el);
+//        }
+//    }
 
     // length of s
     public int length() {
@@ -48,7 +37,12 @@ public class CircularSuffixArray {
     }
 
     // unit testing (required)
-    public static void main(String[] args) {
-        // not implemented
+    public static void main(String[] args) throws FileNotFoundException {
+        if (args.length > 1)
+            System.setIn(new FileInputStream(args[1]));
+
+        CircularSuffixArray array = new CircularSuffixArray(BinaryStdIn.readString());
+        StdOut.println("Length of the word " + array.length());
+        StdOut.println("Index of the 11th suffix in the sorted array is " + array.index(11));
     }
 }

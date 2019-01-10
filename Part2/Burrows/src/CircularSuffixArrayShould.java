@@ -16,11 +16,6 @@ public class CircularSuffixArrayShould {
         array = new CircularSuffixArray(null);
     }
 
-//    @Test
-//    public void Create2DArrayWithSuffixes() {
-//
-//    }
-
     @Test
     public void ReturnLengthOfAbra() {
         Assert.assertEquals(ABRA_STRING.length(), array.length());
@@ -29,5 +24,10 @@ public class CircularSuffixArrayShould {
     @Test
     public void ReturnIndexOfAbraInSortedArray() {
         Assert.assertEquals(2, array.index(11));
+    }
+
+    @Test
+    public void ReturnIndexOfRAInSortedArray() {
+        Assert.assertEquals(10, array.index(1));
     }
 }
