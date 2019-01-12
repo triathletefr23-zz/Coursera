@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="947769f6-1b77-462c-9c99-2a8bfe6d1a3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BurrowsWheeler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BurrowsWheelerShould.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SuffixesGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Part1/8Puzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Part1/8Puzzle/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveToFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BurrowsWheeler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuffixesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuffixesGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +29,13 @@
     <session id="1514216432">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -51,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8720" />
+          <entry key="JAVA" value="11196" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -64,16 +61,16 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+                <state relative-caret-position="44">
+                  <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-687">
+                <state relative-caret-position="21">
                   <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -82,13 +79,17 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+                <state relative-caret-position="357">
+                  <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1433#1434#0" expanded="true" />
+                    <element signature="e#1461#1462#0" expanded="true" />
+                    <element signature="e#1485#1486#0" expanded="true" />
+                    <element signature="e#1509#1510#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -97,8 +98,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+                <state relative-caret-position="220">
+                  <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -113,8 +114,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+                <state relative-caret-position="714">
+                  <caret line="144" column="9" lean-forward="true" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -137,10 +141,14 @@
       <find>asLis</find>
       <find>expand</find>
       <find>sortedSuffixes</find>
+      <find>copy</find>
+      <find>sortedDictionary</find>
     </findStrings>
     <replaceStrings>
       <replace>sortedSuffixes</replace>
       <replace>originalSuffixes</replace>
+      <replace>sorted</replace>
+      <replace>uniqueChars</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -362,7 +370,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547158965430" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547333160552" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Part1/8Puzzle" />
     <property name="project.structure.last.edited" value="Project" />
@@ -382,7 +390,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BurrowsWheeler_Transform_abra">
+  <component name="RunManager" selected="Application.BurrowsWheeler_InverseTransform_abra">
+    <configuration name="BurrowsWheeler_InverseTransform_abra" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
+      <module name="Burrows" />
+      <option name="PROGRAM_PARAMETERS" value="+ data\\abra.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BurrowsWheeler_Transform_abra" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Burrows" />
@@ -457,6 +473,7 @@
       <item itemvalue="Application.MoveToFront_Decode_abra" />
       <item itemvalue="Application.MoveToFront_Decode_alphanum" />
       <item itemvalue="Application.MoveToFront_Decode_couscous" />
+      <item itemvalue="Application.BurrowsWheeler_InverseTransform_abra" />
       <item itemvalue="Application.BurrowsWheeler_Transform_abra" />
       <item itemvalue="JUnit.CircularSuffixArrayShould" />
       <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnLengthOfAbra" />
@@ -617,6 +634,12 @@
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BurrowsWheeler.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -718,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MoveToFrontShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -736,41 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,10 +762,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1461#1462#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="714">
+          <caret line="144" column="9" lean-forward="true" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

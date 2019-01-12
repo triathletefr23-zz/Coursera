@@ -5,6 +5,8 @@ import java.util.Map;
 class SuffixesGenerator {
     private final Map<String, Integer> originalSuffixes;
     private final String[] sortedSuffixes;
+    private char[] t;
+    private int first = 0;
 
     SuffixesGenerator(String s) {
         originalSuffixes = new HashMap<>();
@@ -24,6 +26,17 @@ class SuffixesGenerator {
         }
 
         Arrays.sort(sortedSuffixes);
+
+        char lastCharacter = s.charAt(s.length() - 1);
+
+        // name from the assignment
+        t = new char[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            t[i] = sortedSuffixes[i].charAt(s.length() - 1);
+            if (t[i] == lastCharacter) {
+                first = i;
+            }
+        }
     }
 
     Map<String, Integer> getOriginalSuffixes() {
@@ -32,5 +45,13 @@ class SuffixesGenerator {
 
     String[] getSortedSuffixes() {
         return this.sortedSuffixes;
+    }
+
+    int getFirst() {
+        return first;
+    }
+
+    char[] getT() {
+        return t;
     }
 }
