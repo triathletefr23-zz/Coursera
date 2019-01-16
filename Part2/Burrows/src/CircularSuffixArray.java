@@ -1,48 +1,69 @@
 import edu.princeton.cs.algs4.BinaryStdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.BinaryStdOut;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.Map;
+import java.util.Arrays;
 
 public class CircularSuffixArray {
-    private final Map<String, Integer> originalSuffixes;
-    private final String[] sortedSuffixes;
+    private final String string;
+    private final Integer[] indexes;
 
     // circular suffix array of s
     public CircularSuffixArray(String s) {
-        if (s == null) throw new IllegalArgumentException();
+        if (s == null || s.equals("")) throw new IllegalArgumentException();
+        string = s;
 
-        SuffixesGenerator generator = new SuffixesGenerator(s);
-        originalSuffixes = generator.getOriginalSuffixes();
-        sortedSuffixes = generator.getSortedSuffixes();
+        indexes = new Integer[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            indexes[i] = i;
+        }
+
+        Arrays.sort(indexes, (first, second) -> {
+            int startFirst = first;
+            int startSecond = second;
+
+            for (char ignored : string.toCharArray()) {
+                if (startFirst > string.length() - 1) {
+                    startFirst = 0;
+                }
+
+                if (startSecond > string.length() - 1) {
+                    startSecond = 0;
+                }
+
+                if (string.charAt(startFirst) > string.charAt(startSecond))
+                    return 1;
+
+                if (string.charAt(startFirst) < string.charAt(startSecond))
+                    return -1;
+
+                if (string.charAt(startFirst) == string.charAt(startSecond)) {
+                    startFirst++;
+                    startSecond++;
+                }
+            }
+
+            return 0;
+        });
     }
 
-//    private void printSuffixes(Iterable values) {
-//        for (var el : values) {
-//            StdOut.println(el);
-//        }
-//    }
 
     // length of s
     public int length() {
-        return originalSuffixes.size();
+        return string.length();
     }
 
     // returns index of ith sorted suffix
     public int index(int i) {
         if (i < 0 || i > length()) throw new IllegalArgumentException();
 
-        return originalSuffixes.get(sortedSuffixes[i]);
+        return indexes[i];
     }
 
     // unit testing (required)
-    public static void main(String[] args) throws FileNotFoundException {
-        if (args.length > 1)
-            System.setIn(new FileInputStream(args[1]));
+    public static void main(String[] args) {
 
         CircularSuffixArray array = new CircularSuffixArray(BinaryStdIn.readString());
-        StdOut.println("Length of the word " + array.length());
-        StdOut.println("Index of the 11th suffix in the sorted array is " + array.index(11));
+        BinaryStdOut.write(array.length());
+        BinaryStdOut.write(array.index(0));
     }
 }

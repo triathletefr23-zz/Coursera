@@ -1,5 +1,5 @@
-//import edu.princeton.cs.algs4.BinaryStdIn;
-//import edu.princeton.cs.algs4.BinaryStdOut;
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.BinaryStdOut;
 
 public class MoveToFront {
     private static final int R = 256;
@@ -13,9 +13,6 @@ public class MoveToFront {
             for (int i = 0; i < R; i++) {
                 if (alphabet[i] == c) {
                     BinaryStdOut.write((char) i);
-//                    for (int j = i; j > 0; j--) {
-//                        alphabet[j] = alphabet[j - 1];
-//                    }
                     System.arraycopy(alphabet, 0, alphabet, 1, i);
                     alphabet[0] = c;
                     break;
@@ -23,7 +20,6 @@ public class MoveToFront {
             }
         }
 
-        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 
@@ -39,7 +35,6 @@ public class MoveToFront {
             System.arraycopy(alphabet, 0, alphabet, 1, c);
             alphabet[0] = tmp;
         }
-        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 
