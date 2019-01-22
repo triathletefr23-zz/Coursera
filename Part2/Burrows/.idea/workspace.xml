@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="947769f6-1b77-462c-9c99-2a8bfe6d1a3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Burrows.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Burrows.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BurrowsWheeler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SuffixesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuffixesGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BurrowsWheelerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BurrowsWheelerShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CircularSuffixArray.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,103 +31,100 @@
     <session id="1514216432">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="53" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="72" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="1" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11196" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="14564" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39872068">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21">
-                  <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1433#1434#0" expanded="true" />
-                    <element signature="e#1461#1462#0" expanded="true" />
-                    <element signature="e#1485#1486#0" expanded="true" />
-                    <element signature="e#1509#1510#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="714">
-                  <caret line="144" column="9" lean-forward="true" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1628">
+              <caret line="74" column="49" lean-forward="true" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-451">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#182#216#0" />
+                <element signature="e#2488#2489#0" expanded="true" />
+                <element signature="e#2521#2522#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CircularSuffixArrayShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+              <folding>
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,12 +142,22 @@
       <find>sortedSuffixes</find>
       <find>copy</find>
       <find>sortedDictionary</find>
+      <find>BinaryStdOut.close();</find>
+      <find>256</find>
+      <find>INT</find>
+      <find>var</find>
+      <find>stdout</find>
+      <find>StdOut</find>
+      <find>Std</find>
+      <find>index</find>
     </findStrings>
     <replaceStrings>
       <replace>sortedSuffixes</replace>
       <replace>originalSuffixes</replace>
       <replace>sorted</replace>
       <replace>uniqueChars</replace>
+      <replace>R</replace>
+      <replace>indexes</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -159,19 +168,28 @@
       <list>
         <option value="$PROJECT_DIR$/src/MoveToFrontShould.java" />
         <option value="$PROJECT_DIR$/src/CircularSuffixArrayShould.java" />
-        <option value="$PROJECT_DIR$/src/BurrowsWheelerShould.java" />
-        <option value="$PROJECT_DIR$/src/MoveToFront.java" />
-        <option value="$PROJECT_DIR$/src/CircularSuffixArray.java" />
+        <option value="$PROJECT_DIR$/src/toZip.py" />
+        <option value="$PROJECT_DIR$/src/BinaryStdIn.java" />
+        <option value="$PROJECT_DIR$/src/BinaryStdOut.java" />
+        <option value="$PROJECT_DIR$/src/HexDump.java" />
+        <option value="$PROJECT_DIR$/src/StdOut.java" />
+        <option value="$PROJECT_DIR$/src/StdIn.java" />
+        <option value="$PROJECT_DIR$/src/Queue.java" />
+        <option value="$PROJECT_DIR$/src/Quick3string.java" />
+        <option value="$PROJECT_DIR$/src/StdRandom.java" />
         <option value="$PROJECT_DIR$/src/SuffixesGenerator.java" />
+        <option value="$PROJECT_DIR$/src/MoveToFront.java" />
+        <option value="$PROJECT_DIR$/src/BurrowsWheelerShould.java" />
+        <option value="$PROJECT_DIR$/src/CircularSuffixArray.java" />
         <option value="$PROJECT_DIR$/src/BurrowsWheeler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-8" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -349,7 +367,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,17 +378,22 @@
             <path>
               <item name="Burrows" type="b2602c69:ProjectViewProjectNode" />
               <item name="Burrows" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Burrows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Burrows" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547333160552" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548188461148" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Part1/8Puzzle" />
     <property name="project.structure.last.edited" value="Project" />
@@ -390,7 +413,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BurrowsWheeler_InverseTransform_abra">
+  <component name="RunManager" selected="JUnit.BurrowsWheelerShould.ReturnEncodedWord">
     <configuration name="BurrowsWheeler_InverseTransform_abra" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Burrows" />
@@ -431,6 +454,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MoveToFront_Encode_abra" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="MoveToFront" />
+      <module name="Burrows" />
+      <option name="PROGRAM_PARAMETERS" value="- data\\abra.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BurrowsWheelerShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Burrows" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheelerShould" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BurrowsWheelerShould.ReturnDecodedWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Burrows" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheelerShould" />
+      <option name="METHOD_NAME" value="ReturnDecodedWord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BurrowsWheelerShould.ReturnEncodedWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Burrows" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheelerShould" />
+      <option name="METHOD_NAME" value="ReturnEncodedWord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircularSuffixArrayShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Burrows" />
       <option name="PACKAGE_NAME" value="" />
@@ -439,54 +498,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Burrows" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CircularSuffixArrayShould" />
-      <option name="METHOD_NAME" value="ReturnIndexOfAbraInSortedArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Burrows" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CircularSuffixArrayShould" />
-      <option name="METHOD_NAME" value="ReturnIndexOfRAInSortedArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircularSuffixArrayShould.ReturnLengthOfAbra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Burrows" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CircularSuffixArrayShould" />
-      <option name="METHOD_NAME" value="ReturnLengthOfAbra" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.MoveToFront_Encode_abra" />
       <item itemvalue="Application.MoveToFront_Decode_abra" />
       <item itemvalue="Application.MoveToFront_Decode_alphanum" />
       <item itemvalue="Application.MoveToFront_Decode_couscous" />
       <item itemvalue="Application.BurrowsWheeler_InverseTransform_abra" />
       <item itemvalue="Application.BurrowsWheeler_Transform_abra" />
       <item itemvalue="JUnit.CircularSuffixArrayShould" />
-      <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnLengthOfAbra" />
-      <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" />
-      <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" />
+      <item itemvalue="JUnit.BurrowsWheelerShould.ReturnEncodedWord" />
+      <item itemvalue="JUnit.BurrowsWheelerShould.ReturnDecodedWord" />
+      <item itemvalue="JUnit.BurrowsWheelerShould" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BurrowsWheeler_Transform_abra" />
+        <item itemvalue="JUnit.BurrowsWheelerShould.ReturnEncodedWord" />
+        <item itemvalue="JUnit.BurrowsWheelerShould" />
+        <item itemvalue="JUnit.BurrowsWheelerShould.ReturnDecodedWord" />
         <item itemvalue="JUnit.CircularSuffixArrayShould" />
-        <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" />
-        <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" />
-        <item itemvalue="JUnit.CircularSuffixArrayShould.ReturnLengthOfAbra" />
+        <item itemvalue="Application.BurrowsWheeler_Transform_abra" />
       </list>
     </recent_temporary>
   </component>
@@ -504,35 +534,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 20h 53m 18s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnEncodedWord - 2019.01.22 at 22h 08m 37s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnEncodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 20h 57m 03s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnDecodedWord - 2019.01.22 at 22h 09m 20s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnDecodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 21h 00m 21s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnDecodedWord - 2019.01.22 at 22h 09m 43s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnDecodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 21h 01m 51s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnDecodedWord - 2019.01.22 at 22h 16m 26s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnDecodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 21h 06m 10s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnDecodedWord - 2019.01.22 at 22h 18m 29s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnDecodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 21h 07m 10s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould - 2019.01.22 at 22h 19m 02s.xml">
+      <configuration name="BurrowsWheelerShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfAbraInSortedArray - 2019.01.09 at 21h 13m 27s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfAbraInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnDecodedWord - 2019.01.22 at 22h 19m 13s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnDecodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfRAInSortedArray - 2019.01.09 at 21h 30m 13s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnEncodedWord - 2019.01.22 at 22h 19m 20s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnEncodedWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould_ReturnIndexOfRAInSortedArray - 2019.01.09 at 21h 30m 58s.xml">
-      <configuration name="CircularSuffixArrayShould.ReturnIndexOfRAInSortedArray" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould - 2019.01.22 at 22h 19m 23s.xml">
+      <configuration name="BurrowsWheelerShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CircularSuffixArrayShould - 2019.01.09 at 21h 31m 01s.xml">
-      <configuration name="CircularSuffixArrayShould" configurationId="JUnit" />
+    <history-entry file="BurrowsWheelerShould_ReturnEncodedWord - 2019.01.22 at 22h 19m 27s.xml">
+      <configuration name="BurrowsWheelerShould.ReturnEncodedWord" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -545,18 +575,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1080" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15778251" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" id="Run" order="7" visible="true" weight="0.20682302" />
-      <window_info id="Debug" order="8" weight="0.23880596" />
+      <window_info active="true" id="Run" order="7" visible="true" weight="0.20671141" />
+      <window_info id="Debug" order="8" weight="0.23825504" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -566,8 +596,8 @@
       <window_info anchor="bottom" id="CheckStyle" order="6" weight="0.3035533" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32994923" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32994923" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" weight="0.32994923" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.3294271" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" sideWeight="0.49946696" weight="0.32994923" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -579,7 +609,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1609808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -588,7 +618,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Run" order="7" weight="0.20682302" />
       <window_info id="Debug" order="8" weight="0.23880596" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32994923" />
+      <window_info active="true" anchor="bottom" id="Messages" order="0" visible="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
@@ -597,8 +627,8 @@
       <window_info anchor="bottom" id="CheckStyle" order="6" weight="0.3035533" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32994923" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32994923" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" weight="0.32994923" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32994923" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="10" sideWeight="0.49946696" weight="0.32994923" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -621,24 +651,6 @@
           <line>9</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MoveToFront.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MoveToFront.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BurrowsWheeler.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -748,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CircularSuffixArrayShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/HexDump.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
@@ -762,54 +767,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
+    <entry file="file://$PROJECT_DIR$/src/toZip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryStdIn.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryStdIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HexDump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StdIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryStdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Quick3string.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../algs4.jar!/edu/princeton/cs/algs4/Quick3way.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StdRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="67" column="2" lean-forward="true" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quick3string.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-451">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BurrowsWheelerShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="74" column="49" lean-forward="true" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CircularSuffixArrayShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CircularSuffixArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state>
+          <caret selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoveToFront.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuffixesGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#182#216#0" />
+            <element signature="e#2488#2489#0" expanded="true" />
+            <element signature="e#2521#2522#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BurrowsWheeler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="144" column="9" lean-forward="true" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
